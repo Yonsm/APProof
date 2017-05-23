@@ -1,0 +1,116 @@
+修改xml到普通文本解析是因为xml解析慢
+(hue1,sat1,bri1,showColor1), (hue2,sat2,bri2,showColor2), ....
+
+[styles]
+151_74_76_0x31c27cff, 197_100_90_0x00a3e7ff, 209_85_78_0x1e75c9ff, 275_73_71_0x7f30b7ff,
+312_100_90_0xe700b6ff, 339_93_84_0xd80f53ff, 209_31_53_0x5e7489ff
+[/styles]
+
+#可延迟加载的png
+[delayableImages]
+        bottom_record.png,tingBig.png,voice_input_word_01.png,
+        voice_input_word_02.png,voice_input_word_03.png,voice_input_word_04.png,voice_input_word_05.png,voice_input_word_06.png,
+        voice_input_word_07.png,voice_input_word_08.png,voice_input_word_09.png,voice_input_word_10.png,voice_input_word_11.png,
+        voice_input_word_12.png,
+        channel_bottom_line.png,live_share.png,
+        live_loading_1.png,live_loading_2.png,live_loading_3.png,ls_live_song_list_1.png,ls_live_song_list_2.png,ls_live_song_list_3.png,
+        channel_song_list_play_btn.png,roaming_pc.png,roaming_Pad.png,roaming_phone.png,roaming_BG.png,roaming_BG_otherTheme.png,
+        player_albumcover_default.png,tuijianSelected.png,
+        id_bg_greenline.png,
+        playing_translate_lyric_select_n.png,playing_translate_lyric_select_h.png,dts_accessory_in_ear_chosen.png,dts_accessory_over_ear_chosen.png,dts_accessory_speaker_chosen.png,dts_preset_mode_wide_chosen.png,dts_preset_mode_front_chosen.png,dts_preset_mode_near_chosen.png,supersound_effect_setting_surround_enable.png,supersound_effect_setting_bass_enable.png,supersound_effect_setting_tender_enable.png,supersound_effect_setting_studio_enable.png,supersound_effect_setting_tender_enable.png,supersound_effect_setting_vocal_enable.png,supersound_effect_setting_retro_enable.png,soundEffectEnable.png,DTS_checked.png,player_btn_dts_on.png,player_btn_dts_off.png,player_btn_dts_pressed.png,supersound_free.png,ssAdd.png,
+        icon_lbs_locate.png,icon_lbs_streetscape.png,channel_list_tag_h.png,editorFolder_btn.png,
+        forme_icon_add.png,forme_icon_cd.png,forme_icon_fans.png,forme_icon_like_hover.png,
+        forme_icon_like.png,forme_icon_singer.png,forme_icon_song.png,forme_icon_songlist.png,bannerTips_ok.png,library_singer_follow_icon.png,
+        channel_radio_list_icon_nowplaying.png,
+        button.png,button_h.png,button_hover.png,downloadButton.png,
+        share_timeline_zan_empty.png,share_timeline_zan_solid.png,
+        cell_req_play.png,library_search_lyric_logo.png,channel_list_tag_n.png,followRectangleIcon.png,
+        channel_friend_share.png,channel_friend_dislove.png
+        ,follow_star_hover.png,follow_daren_hover.png,follow_user_hover.png,follow_qqfriends_hover.png,download_history_entrance_pc.png,mymusic_login_btn.png
+        ,musiccircle_zaned.png,circle_zan_h.png,circle_comment_h.png,,music_circle_btn.png,music_circle_btn_select.png,cell_live_icon.png,cell_orig_icon.png,hq.png,exclusive.png
+        ,playing_lyric_onlyyinyi_click_h.png,playing_lyric_onlyyinyi_select.png
+        ,playing_yinyi_lyric_select_h.png,playing_yinyi_lyric_translate_select_h.png,playing_yinyi_lyric_translate_select_n.png,playing_yinyi_lyric_yin_select_n.png,musiccircle_square_icon.png,musiccircle_myfollow_icon.png,circle_zan_n.png,cell_mv_icon.png,icon_addnew.png,followMoreHeadIcon.png,cell_paied.png,cell_need_pay1.png,recognize_start_new_session.png,cell_limitedFree.png,
+        apptheme_cell_using_bg.png,apptheme_btn.png,apptheme_btn_h.png,bg_speed_tips.png,ls_button_bg.png, discover_icon_music_poster.png,channel_v4_icon_brand.png,channel_v4_icon_dujia.png,silent_user_recommend_confirm_icon.png,icon_new.png,
+        global_comment_input_send.png,global_comment_share_selected.png,shoppingcart.png,search_play_btn.png,search_play_btn_pressed.png,search_stop_btn.png,search_stop_btn_pressed.png,recognize_stopped_btn.png,recognize_working_btn.png,recognize_sing_stopped_btn.png,recognize_sing_working_btn.png,recognize_circle_around_line.png,recognize_ing_listenbtn_h.png,recognize_ing_singbtn_h.png,recognize_failed_clip.png,recognize_nonet_clip.png,empty.png,global_comment_no_data.png,noData.png,noFans.png,noMatch.png,noNet.png,pLock.png,search_goto_recoginize.png,supersound_hot.png,supersound_new.png
+[/delayableImages]
+
+不可延迟加载的png
+[undelayableImages]
+        player_slider_playback_left.png,
+        cell_auto_down_opened_finished.png,cell_auto_down_opened_waiting.png,
+        cell_checked.png,
+        downloaded_process_left.png,downloaded_process_middle.png,downloaded_process_right.png,moreSelected.png,
+        mymusicSelected.png,nowplaying.png,nowplayingSelected.png,online_autosave_finish.png,yun.png,
+        online_autosave_ing.png,playingsong.png,selected.png,
+        allsong_type_selected.png,
+        voice_input_error.png,voice_input_preparing.png,voice_input_speaker.png,voice_input_try_again.png,
+        voice_input_try_again_hilighted.png,voice_input_wave1.png,voice_input_wave2.png,voice_input_wave3.png,voice_input_done_speak.png,
+        voice_input_done_speak_hilighted.png,voice_input_green_point.png,voice_input_recognizing.png,
+        channel_brand_image_title.png,player_btn_qplayon_normal.png,player_btn_qplayon_highlight.png,
+        player_btn_airplayon_normal.png,player_btn_airplayon_highlight.png,player_btn_copyright_normal.png,player_btn_copyright_highlight.png,player_btn_mv_normal.png,player_btn_mv_highlight.png,player_btn_chinaunicomfree_normal.png,player_btn_chinaunicomfree_highlight.png,
+        cell_tingicon.png,cell_diicon.png,
+        channel_song_list_play_mv_btn.png,channel_songFolderList_playAll.png,input_login_line.png,
+        icon_find_click.png,discover_icon_singers.png,discover_icon_recognizer.png,discover_icon_music_circle.png,
+            discover_icon_blog.png,discover_icon_trend.png,discover_icon_poster.png,
+        discover_icon_guess_your_favor.png,
+
+        xitongmorengedan.png,player_slider_playback_thumb.png,shake_panel_btn.png,shake_panel_btn_h.png,
+        xinjiangedan.png,channel_v4_category_btn_selected.png,channel_v4_tab_hover.png,
+        mymusic_icon_allsongs_normal.png,mymusic_icon_download_normal.png,
+        mymusic_icon_mv_normal.png,mymusic_icon_paidmusic_normal.png,mymusic_icon_favorite_normal.png,mymusic_icon_favorite_highlight.png,discover_icon_mv.png,
+        mymusic_root_empty_folder.png,player_btn_next_highlight.png,player_btn_next_normal.png,player_btn_pause_highlight.png,player_btn_pause_normal.png,player_btn_play_highlight.png,player_btn_play_normal.png,player_btn_pre_highlight.png,player_btn_pre_normal.png,hp_player_btn_pre_normal.png,hp_player_btn_pre_highlight.png,hp_player_btn_play_normal.png,hp_player_btn_play_highlight.png,hp_player_btn_pause_normal.png,hp_player_btn_pause_highlight.png,hp_player_btn_next_normal.png,hp_player_btn_next_highlight.png,
+
+        miniplayer_btn_radiolist_highlight.png,miniplayer_btn_radiolist_normal.png,miniplayer_btn_pause_highlight.png,miniplayer_btn_pause_normal.png,miniplayer_btn_play_highlight.png,miniplayer_btn_play_normal.png,miniplayer_btn_playlist_highlight.png,miniplayer_btn_playlist_normal.png,miniplayer_loading.png,
+
+  more_icon_about.png,more_icon_chinaunicom.png,more_icon_chinaunicomfree.png,more_icon_vip_normal.png,more_icon_cleancache.png,more_icon_nightmode.png,more_icon_qplaycar.png,more_icon_notificationcenter.png,more_icon_settings.png,more_icon_timer.png,mymusic_icon_history_normal.png,search_hotword_btn_h.png,search_yunying_btn.png,more_icon_theme.png,more_icon_concisepattern.png,more_icon_importsongs.png,more_icon_only_wireless.png,more_icon_bottom_setting.png,more_icon_bottom_login.png,more_icon_bottom_logout.png,
+        random.png,random_pressed.png,icon_operate_play.png,icon_operate_play_pressed.png,icon_downing.png,icon_downloading_pause.png,icon_downing_pressed.png,icon_manage_downloadingView.png,icon_manage_downloadingView_pressed.png,icon_operate_add.png,icon_operate_add_pressed.png,icon_operate_sync_ipod.png,player_albumcover_minidefault.png,
+
+    button_back_bg.png,button_import_song.png,button_scan_bg.png,import_detail_icon_b.png,import_note_icon.png,succ_icon.png,topo_pc_b.png,topo_wire_b.png,topo_wireless_b.png,importing_process_left_b.png, importing_process_middle_b.png,importing_process_right_b.png, imported_process_left.png, imported_process_middle.png, imported_process_right.png
+    mvplayer_progress_played_mini.png,mvplayer_progress_thumb_mini.png,mvplayer_progress_played_left.png,mvplayer_progress_played_middle.png,mvplayer_progress_played_right.png,
+        discover_icon_music_circle_big.png,playing_btn_try.png,song_try.png,
+
+          list_play.png,list_play_pressed.png,player_btn_closetan.png,player_btn_closetan_pressed.png,channel_v4_category_btn_bg.png,channel_v4_category_btn_arrow_icon.png,
+        mymusic_icon_allsongs_highlight.png,mymusic_icon_download_highlight.png,mymusic_icon_history_highlight.png,mymusic_icon_favorite_highlight.png,mymusic_icon_mv_highlight.png,mymusic_icon_paidmusic_highlight.png,
+        player_btn_bz_sel_highlight.png,player_btn_bz_sel_normal.png,player_btn_hq_sel_highlight.png,player_btn_hq_sel_normal.png,player_btn_jj_sel_highlight.png,player_btn_jj_sel_normal.png,player_btn_lc_sel_highlight.png,player_btn_lc_sel_normal.png,info_btn_downloads.png,
+  actionIconDownloadedupdate_2.png,player_btn_downloaded_highlight_2.png,player_btn_downloaded_normal_2.png,voice_input_done_speak_2.png,voice_input_try_again_2.png,actionIconDownloaded_2.png,profile_visitor_delete.png,anchorButton_2.png,more_icon_personal_center.png,theme_change_color.png,theme_setting.png,more_icon_chinaunicom_small.png,mini_trash.png
+
+[/undelayableImages]
+
+常驻在内存的几张图,用于加载界面更快一些
+[inMemoryImages]
+        vc_bg.png,
+        cell_mv_icon.png,
+        hq.png,
+        sq.png,
+        exclusive.png,
+        playingsong.png,
+        selected.png,
+        selected_h.png,
+        arrow.png,
+        arrowSelected.png,
+        newIcon.png,
+        red.png,
+        nowplaying.png,
+        xitongmorengedan.png,
+        channel_v4_tab_hover.png,
+        online_autosave_finish.png,
+        yun.png,
+        list_play.png,
+        icon_downing.png,
+        icon_manage_downloadingView.png,
+        back.png,
+        backSelected.png,
+        vc_head_bg.png,
+        main_tab_more.png,
+        actionbutton.png,
+        moreBtn.png
+[/inMemoryImages]
+
+
+
+
+
+
+
+
+

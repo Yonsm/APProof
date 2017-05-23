@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<root decs="video-web">
+	<adList>
+		<IsNeedTime>0</IsNeedTime>
+		<item>
+			<order_id>100360362</order_id>
+			<type>WZ</type>
+            <display_code>RichMediaFront</display_code>
+			<cover_id><![CDATA[]]>
+			</cover_id>
+			<url><![CDATA[http://la.gtimg.com/qqlive/51d5350fa58f06aa44b91e6a7527a2fa780.swf]]></url>
+			<urlsmall><![CDATA[http://la.gtimg.com/qqlive/51d5350fa58f06aa44b91e6a7527a2fa780.swf]]></urlsmall>
+			<params>
+            <![CDATA[oid=1723183&cid=0&loc=LV_1001_LDVi_LD&orderfile=http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2Fsz_L1YL_201403314655.flv&vid=m0200qilsmq&get_type=&button_name=&richdata=%7B%22oid%22%3A%221723183%22%2C%22cid%22%3A%220%22%2C%22richMediaUrl%22%3A%22http%3A%2F%2Fadnew.qq.com%2Flab%2Fhtml5Demo%2Flauncher%2Findex.html%22%2C%22orderfile%22%3A%22http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2Fsz_L1YL_201403314655.flv%22%2C%22vid%22%3A%22a02003no5og%22%2C%22plugins%22%3A%7B%22plugType%22%3A%22interactive%22%2C%22videoWidth%22%3A%22761%22%2C%22videoHeight%22%3A%22428%22%2C%22showType%22%3A%22adStory%22%2C%22switchTime%22%3A%225000%22%2C%22greetingType%22%3A%22%22%2C%22pos%22%3A%22custom%22%2C%22customTitle1%22%3A%22%E6%91%87%E4%B8%80%E6%91%87%22%2C%22customTitle2%22%3A%22%E4%B9%90%E4%BA%AB%E5%AE%8C%E6%95%B4%E7%89%88%22%2C%22res%22%3A%5B%7B%22content%22%3A%22images%2Ftest1.jpg%22%2C%22link%22%3A%22http%3A%2F%2Fv.qq.com%2Fcover%2Fi%2Fiw05kzx7vhwwc5b.html%22%2C%22title%22%3A%22%E8%88%92%E6%B7%87%E6%8B%A5%E6%9C%89%E7%A7%80%E5%8F%91%E7%9A%84%E7%A7%98%E8%AF%80%22%2C%22vid%22%3A%22m0200qilsmq%22%2C%22url%22%3A%22http%3A%2F%2Fla.gtimg.com%2Fqqlive%2Fsz_L1YL_201404040710.flv%22%7D%2C%7B%22content%22%3A%22images%2Ftest2.jpg%22%2C%22title%22%3A%22%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%B0%8F%E8%A7%86%E9%A2%91%22%2C%22link%22%3A%22http%3A%2F%2Fv.qq.com%22%2C%22vid%22%3A%22o02005z5vqk%22%2C%22url%22%3A%22http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2FBRD_201406244456Heineken15s.flv%22%7D%2C%7B%22content%22%3A%22images%2Ftest3.jpg%22%2C%22title%22%3A%22%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%B0%8F%E8%A7%86%E9%A2%91%22%2C%22link%22%3A%22http%3A%2F%2Fv.qq.com%3F3%22%2C%22vid%22%3A%22p0200yld8c3%22%2C%22url%22%3A%22http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2Fksfkq0612.flv%22%7D%5D%7D%2C%22loc%22%3A%22LV_1001_LDVi_LD%22%7D]]>
+        	</params>
+			<image>
+				<index>0</index>
+				<url><![CDATA[http://119.147.110.183/mobile_sdk/images/asics.jpg]]></url>
+				<width>400</width>
+				<height>300</height>
+				<vid></vid>
+			</image>
+			<image>
+				<index>1</index>
+				<url><![CDATA[http://119.147.110.183/mobile_sdk/images/asics.jpg]]></url>
+				<width>400</width>
+				<height>300</height>
+				<vid></vid>
+			</image>
+			<duration>0</duration>
+			<ReportTime>0</ReportTime>
+			<link><![CDATA[http://www.asicsamerica.com/?]]></link>
+			<reportUrl><![CDATA[http://livep.l.qq.com/livemsg?o=100360362&cid=0&adtype=WZ&l=5003&mt=0&refluence=5003&imagelog=0&soid=B499DB0E6A2D5227ECDE71462100&aver=0]]></reportUrl>
+			<reportUrlOther></reportUrlOther>
+		</item>
+	</adList>
+</root>

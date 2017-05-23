@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <priority>11</priority>
+    <sid>txtChsSimple11</sid>
+    <thumbImage>text_style_chs_11.png</thumbImage>
+    <defaultFontName>DFPLiJinHeiW8</defaultFontName>
+    <parameters>
+        <style>1</style>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <isWrap>YES</isWrap>
+        <maxTextwidth>109</maxTextwidth>
+        <alignment>2</alignment>
+        <minFontArray>50,32,24</minFontArray>
+        <lineSpacing>6</lineSpacing>
+        <margin>10,10,10,10</margin>
+        <upperOrLower>1</upperOrLower>
+        <lineDraw width="4" start="0,0" end="-0,0" length="0"/>
+        <lineDraw width="4" start="-0,0" end="-0,-0" length="0"/>
+        <lineDraw width="4" start="-0,-0" end="0,-0" length="0"/>
+        <lineDraw width="4" start="0,-0" end="0,0" length="0"/>
+    </parameters>
+</models>

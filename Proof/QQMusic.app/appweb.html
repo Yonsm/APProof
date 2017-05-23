@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>播放 - QQ音乐</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<body>
+<a href="javascript:;" id="test1">专题消息</a><br /><br />
+<a href="javascript:;" id="test2">专题列表页消息</a><br /><br />
+<a href="javascript:;" id="test3">电台消息</a><br /><br />
+<a href="javascript:;" id="test4">排行榜消息</a><br /><br />
+<a href="javascript:;" id="test5">新歌首发列表页消息</a><br /><br />
+<a href="javascript:;" id="test6">新歌首发专辑消息</a><br /><br />
+<a href="javascript:;" id="test7">新歌首发单曲消息</a><br /><br />
+<a href="javascript:;" id="test8">歌手消息</a><br /><br />
+<a href="javascript:;" id="test12">网页消息(内网页)</a><br /><br />
+<a href="javascript:;" id="test13">网页消息(外网页)</a><br /><br />
+<a href="javascript:;" id="test15">MV专题</a><br /><br />
+<a href="javascript:;" id="test16">MV专题页列表</a><br /><br />
+<a href="javascript:;" id="test17">MV榜</a><br /><br />
+<a href="javascript:;" id="test18">MV首发</a><br /><br />
+<a href="javascript:;" id="test19">MV播放</a><br /><br />
+<a href="javascript:;" id="test20">网页分享</a><br /><br />
+<a href="javascript:;" id="test21">点击分享</a><br /><br />
+<a href="javascript:;" id="test22">完成PPT</a><br /><br />
+<a href="javascript:;" id="test23">显示miniPlayer</a><br /><br />
+<a href="javascript:;" id="test24">隐藏miniPlayer</a><br /><br />
+<a href="javascript:;" id="test25">跳电台</a><br /><br />
+<a href="javascript:;" id="test26">直播</a><br /><br />
+<a href="javascript:;" id="test27">播放背景音乐</a><br /><br />
+<a href="javascript:;" id="test28">分类列表页</a><br /><br />
+<a href="javascript:;" id="test29">分类详情页</a><br /><br />
+<script>
+// callHandler
+document.addEventListener('WebViewJavascriptBridgeReady', function(e){
+	var e = e || window.event, D = document;
+	var bridge = e.bridge;
+    bridge.init();
+	
+	bridge.callHandler('share',{
+		"appid":"wx5aa333606550dfd5",
+		"img_url":"http://y.gtimg.cn/music/photo/album_300/96/300_albumpic_61596_0.jpg?max_age=31536000",
+		"img_width":"173",
+		"img_height":"173",
+		"link":"http://y.qq.com/i/song.html?songid=727824&st=&p=#wechat_redirect",
+		"desc":"y.qq.com",
+		"title":"至少还有你 - 林忆莲"
+	},function(response){});
+	
+	// 2.1 专题消息
+	D.getElementById('test1').onclick = function(){
+                          bridge.callHandler('1',{"k1":854,"k2":"http://y.qq.com/v3/static/2013060210/topic/54/topic_854_3.json.z","k3":"VGhlIFBhY2thZ2UgVG91cg==","k4":10003,"k5":2003,"k6":1},function(response){});
+                          };
+	
+	// 2.2 专题列表页消息
+	D.getElementById('test2').onclick = function(){
+		bridge.callHandler('2',{"k1":5,"k2":"http://y.qq.com/v3/static/2013060220/theme/5/theme_5_0.json.z","k3":"华语制造","k4":2003,"k5":2003,"k6":5},function(response){});
+	};
+
+	// 2.3 电台消息
+	D.getElementById('test3').onclick = function(){
+		bridge.callHandler('3',{"k1":300},function(){});
+	};
+
+	// 2.4 排行榜消息
+	D.getElementById('test4').onclick = function(){
+		bridge.callHandler('4',{"k1":1,"k2":"http://y.qq.com/v3/static/2013060210/toplist/1/toplist_1_0.json.z","k3":"UVEgUmFua05hbWU=" ,"k4":10005,"k5":10005,"k6":106},function(response){});
+	};
+	
+	// 2.5 新歌首发列表页消息
+	D.getElementById('test5').onclick = function(){
+		bridge.callHandler('5',{"k1":1,"k2":"http://y.qq.com/v3/static/2013060210/shoufa/shoufa_1.json.z","k3":"新歌首发" ,"k4":2001},function(response){});
+	};
+	
+	// 2.6 新歌首发专辑消息
+	D.getElementById('test6').onclick = function(){
+		bridge.callHandler('6',{"k1":64718,"k2":"http://y.qq.com/v3/static/album/18/album_64718_0.json.z","k3":"专辑" ,"k4":10002},function(response){});
+	};	
+	// 2.7 新歌首发单曲消息
+	D.getElementById('test7').onclick = function(){
+		bridge.callHandler('7',{"k1":1,"k2":"http://y.qq.com/v3/static/2013060214/shoufa/10001_1_p1.json.z","k3":"单曲" ,"k4":10001},function(response){});
+	};	
+	// 2.8 歌手消息
+	D.getElementById('test8').onclick = function(){
+		bridge.callHandler('8',{"k1":2},function(response){});
+	};	
+
+	// 2.12 网页消息(内网页)
+	D.getElementById('test12').onclick = function(){
+		bridge.callHandler('12',{"k2":"http://y.qq.com/song.html"},function(response){});
+	};	
+
+	// 2.13 网页消息(外网页)
+	D.getElementById('test13').onclick = function(){
+		bridge.callHandler('13',{"k2":"http://y.qq.com/song.html"},function(response){});
+	};	
+
+	// 2.14 MV专题
+	D.getElementById('test15').onclick = function(){
+		bridge.callHandler('15',{"k1":14,"k3":"MV专题" ,"k4":10011,"k5":2009,"k6":1},function(response){});
+	};	
+
+	// 2.15 MV专题页列表
+	D.getElementById('test16').onclick = function(){
+		bridge.callHandler('16',{"k1":1,"k3":"MV列表页" ,"k4":2009,"k5":2009,"k6":1},function(response){});
+	};	
+	
+	// 2.16 MV榜
+	D.getElementById('test17').onclick = function(){
+		bridge.callHandler('17',{"k1":201,"k3":"MV榜" ,"k4":10010,"k5":10010,"k6":201},function(response){});
+	};	
+
+	// 2.17 MV首发
+	D.getElementById('test18').onclick = function(){
+		bridge.callHandler('18',{"k1":1,"k3":"MV首发" ,"k4":10009},function(response){});
+	};
+	
+	// 2.18 MV播放
+	D.getElementById('test19').onclick = function(){
+		bridge.callHandler('19',{"k2":"y0012czqevx","k3":"亲爱的路人"},function(response){});
+	};
+	
+	// 网页分享
+	D.getElementById('test20').onclick = function(){
+		bridge.callHandler('share',{"appid":"wx5aa333606550dfd5","img_url":"http://y.gtimg.cn/music/photo_new/T002R300x300M000003jknnp383I5k.jpg","img_width":"173","img_height":"173","link":"http://y.qq.com/#type=album&mid=003jknnp383I5k","desc":"你有否试过爱上和我自己相距太远的人，你又有否试过自卑而不敢靠近对方。 ","title":"Everlasting"},function(response){});//"http://y.gtimg.cn/music/photo/mid_album_300/5/k/003jknnp383I5k.jpg"
+	};
+    
+    // 分享
+    D.getElementById('test21').onclick = function(){
+    bridge.callHandler('24',{"k1":"y0012czqevx","k2":"点击按钮分享"},function(response){});
+    };
+                          
+    
+    // 完成
+    D.getElementById('test22').onclick = function(){
+        bridge.callHandler('finishWebView',{},function(response){});
+    };
+                          
+    // 显示miniPlayer
+    D.getElementById('test23').onclick = function(){
+        bridge.callHandler('showMiniPlayer',{},function(response){});
+    };
+    // 隐藏miniPlayer
+    D.getElementById('test24').onclick = function(){
+        bridge.callHandler('hideMiniPlayer',{},function(response){});
+    };
+    // 跳电台
+    D.getElementById('test25').onclick = function(){
+    bridge.callHandler('jumptoradio',{"k1":99},function(response){});
+   };
+                          
+    D.getElementById('test26').onclick = function(){
+    bridge.callHandler('liveplay',{"liveid":"100003601","title":"直播"},function(response){});
+    };
+                          
+    D.getElementById('test28').onclick = function(){
+    bridge.callHandler('34',{},function(response){});
+    };
+                          
+    D.getElementById('test29').onclick = function(){
+    bridge.callHandler('35',{"k1":101,"k3":"分类详情页"},function(response){});
+   };
+                          
+    D.getElementById('test27').onclick = function(){
+                          bridge.callHandler('music_playlist', {
+                                              "uin" : 504391727,
+                                              "index" : 1,
+                                              "type" : 1,
+                                              'action' : 'backplay',
+                                              "list" : [
+                                                        {
+                                                        "songid": 0,
+                                                        "songmid": "vLZqOGCfjrx1",
+                                                        "songname": "暗涌",
+                                                        "singername": "Mercy丶",
+                                                        "albumname": "",
+                                                        "songtype": 102,
+                                                        "url": "http://cgi.kg.qq.com/fcgi-bin/fcg_get_play_url?shareid=vLZqOGCfjrx1&stdfrom=3"
+                                                        },
+                                                        {
+                                                        "songid": 810673813,
+                                                        "songmid": "000jExyO15o8Oq",
+                                                        "songname": "贝加尔湖畔",
+                                                        "singername": "李健",
+                                                        "albumname": "",
+                                                        "songtype": 102,
+                                                        "url": "http://streamrdt.music.qq.com/4097.180602101e97c4a0124102b754d4d8af/01429089249/4097.180602101e.html?stdfrom=2"
+                                                        },
+                                                        {
+                                                        "songid": 7198860,
+                                                        "songmid": "002EhQ0V2j87qC",
+                                                        "songname": "丝萝",
+                                                        "singername": "李宇春",
+                                                        "albumname": "丝萝",
+                                                        "songtype": 1,
+                                                        "url": "http://streamrdt.music.qq.com/4097.180602101e97c4a0124102b754d4d8af/01429089249/4097.180602101e.html"
+                                                        }
+                                                        ]
+                                              }, function(){
+                                              });
+
+    };
+
+                          
+}, false);
+</script>
+</body>
+</html>

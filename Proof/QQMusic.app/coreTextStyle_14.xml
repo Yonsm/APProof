@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <sid>txtChsSimple14</sid>
+    <thumbImage>text_style_chs_14.png</thumbImage>
+    <defaultFontName>FZQingKeBenYueSongS-R-GB</defaultFontName>
+    <parameters>
+        <style>2</style>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <isWrap>YES</isWrap>
+        <maxTextwidth>0,0</maxTextwidth>
+        <fontSize>30</fontSize>
+        <alignment>0</alignment>
+        <isWaves>10</isWaves>
+        <lineSpacing>8</lineSpacing>
+        <margin>4,4,4,4</margin>
+    </parameters>
+</models>

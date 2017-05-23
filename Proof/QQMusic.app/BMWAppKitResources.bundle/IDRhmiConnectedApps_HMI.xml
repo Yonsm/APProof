@@ -1,0 +1,62 @@
+<pluginApps>
+    <pluginApp applicationType="OnlineServices" text="IDRhmiConnectedApps" applicationWeight="0">
+        <actions>
+            <raAction id="6"/>
+            <raAction id="5"/>
+            <linkAction id="28" actionType="navigate" linkModel="13"/>
+            <linkAction id="29" actionType="call" linkModel="14"/>
+        </actions>
+        <models>
+            <formatDataModel id="2" formatStringModel="27" modelType="Info">
+                <models>
+                    <raDataModel id="7"/>
+                </models>
+            </formatDataModel>
+            <textIdModel id="27" textId="26"/>
+            <textIdModel id="8" textId="25"/>
+            <raListModel id="4"/>
+            <raDataModel id="9"/>
+            <raDataModel id="10"/>
+            <raDataModel id="11"/>
+            <raDataModel id="12"/>
+            <raDataModel id="13" modelType="Address"/>
+            <raDataModel id="14" modelType="Phonenumber"/>
+        </models>
+        <entryButton id="22" text="IDRhmiConnectedApps">
+            <properties>
+                <property id="3" value="false"/>
+                <property id="22" value="false"/>
+                <property id="23" value="0"/>
+            </properties>
+        </entryButton>
+        <events>
+            <popupEvent id="15" target="21" priority="10"/>
+            <actionEvent id="19" action="28"/>
+            <actionEvent id="20" action="29"/>
+            <focusEvent id="16" targetModel="9"/>
+            <multimediaInfoEvent id="17" textModel1="10" textModel2="11"/>
+            <statusbarEvent id="18" textModel="12"/>
+        </events>
+        <hmiStates>
+            <popupHmiState id="21" textModel="8">
+                <components>
+                    <label id="1" model="2">
+                        <properties>
+                            <property id="1" value="true"/>
+                            <property id="2" value="false"/>
+                            <property id="3" value="true"/>
+                        </properties>
+                    </label>
+                    <list id="3" model="4" action="6" selectAction="5">
+                        <properties>
+                            <property id="1" value="true"/>
+                            <property id="2" value="true"/>
+                            <property id="3" value="true"/>
+                            <property id="6" value="50,30,*"/>
+                        </properties>
+                    </list>
+                </components>
+            </popupHmiState>
+        </hmiStates>
+    </pluginApp>
+</pluginApps>

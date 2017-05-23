@@ -1,0 +1,15 @@
+{
+    "Id": "000",
+    "Title": "默认",
+    "Icon": "icon",
+    "Overlayer":
+    {
+        "StartTime": 0,
+        "Source": "defaultOverlayVideo.mp4",
+        "IsLoop": true,
+        "Type": "all",
+        "NeedMask": false,
+        "TimeDependOnMask": false,
+        "NeedAnimation":false
+    }
+}

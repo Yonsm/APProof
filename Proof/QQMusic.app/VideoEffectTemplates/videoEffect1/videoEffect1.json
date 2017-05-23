@@ -1,0 +1,132 @@
+{
+    "Id": "001", 
+    "Title": "炫酷屌炸天",
+    "Icon": "icon", 
+    "Overlayer":
+        {
+            "StartTime": 0, 
+            "Source": "overlayVideo.MP4",
+            "OverlayFilter": 102,
+            "IsLoop": true, 
+            "Type": "all", 
+            "NeedMask": true,
+            "MaskSource": "overlayVideo_mask.MP4",
+            "MaskFilter": 101,
+            "TimeDependOnMask": true,
+            "NeedAnimation":true
+        },
+    "PictureSwitch":
+    [
+        {
+            "StartTime": 0, 
+            "EndTime": 5070
+        }, 
+        {
+            "StartTime": 5070, 
+            "EndTime": 9170
+        }, 
+        {
+            "StartTime": 9170, 
+            "EndTime": 13000
+        }, 
+        {
+            "StartTime": 13000,
+            "EndTime": 17080
+        }
+    ], 
+    "AnimationArray":
+    [
+     
+         {
+         "AnimationType": 2,
+         "Duration": 3000,
+         "FactorStart": 0,
+         "FactorEnd": 0.25,
+         "Filter": 201,
+         "NeedTwoPicture":false
+         },
+         {
+         "AnimationType": 2,
+         "Duration": 0,
+         "FactorStart": 0,
+         "FactorEnd": 0,
+         "Filter": 202,
+         "NeedTwoPicture":false
+         },
+         {
+         "AnimationType": 2,
+         "Duration":1000,
+         "FactorStart": 0,
+         "FactorEnd": 0.382,
+         "Factor2Start": 0,
+         "Factor2End": 0.5,
+         "Filter": 305,
+         "NeedTwoPicture":true
+         },
+         {
+         "AnimationType": 2,
+         "Duration":1000,
+         "FactorStart": 0,
+         "FactorEnd": 1,
+         "Filter": 303,
+         "NeedTwoPicture":true
+         },
+         {
+         "AnimationType": 2,
+         "Duration": 3000,
+         "FactorStart": 0,
+         "FactorEnd": 0.25,
+         "Filter": 201,
+         "NeedTwoPicture":false
+         },
+         {
+         "AnimationType": 2,
+         "Duration": 0,
+         "FactorStart": 0,
+         "FactorEnd": 0,
+         "Filter": 202,
+         "NeedTwoPicture":false
+         },
+         {
+         "AnimationType": 2,
+         "Duration":1000,
+         "FactorStart": 0,
+         "FactorEnd": 1,
+         "Filter": 302,
+         "NeedTwoPicture":true
+         },
+         {
+         "AnimationType": 2,
+         "Duration":1000,
+         "FactorStart": 0,
+         "FactorEnd": 1,
+         "Filter": 301,
+         "NeedTwoPicture":true
+         },
+         {
+         "AnimationType": 2,
+         "Duration": 3000,
+         "FactorStart": 0,
+         "FactorEnd": 0.25,
+         "Filter": 201,
+         "NeedTwoPicture":false
+         },
+         {
+         "AnimationType": 2,
+         "Duration": 0,
+         "FactorStart": 0,
+         "FactorEnd": 0,
+         "Filter": 202,
+         "NeedTwoPicture":false
+         },
+         {
+         "AnimationType": 2,
+         "Duration": 1000,
+         "FactorStart": 0,
+         "FactorEnd": 1,
+         "Filter": 307,
+         "NeedTwoPicture":true
+         }
+     
+    ]
+}

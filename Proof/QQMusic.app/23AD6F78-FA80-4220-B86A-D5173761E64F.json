@@ -1,0 +1,56 @@
+{
+	"localizedNames":{
+		"de":"QQ音乐听歌识曲",
+		"en_GB":"Identify Songs",
+		"en_US":"QQ音乐听歌识曲",
+		"es_ES":"QQ音乐听歌识曲",
+		"in":"QQ音乐听歌识曲",
+		"it":"QQ音乐听歌识曲",
+		"fr_FR":"QQ音乐听歌识曲",
+		"nl_BE":"QQ音乐听歌识曲",
+		"nl_NL":"QQ音乐听歌识曲",
+		"ar":"QQ音乐听歌识曲",
+		"zh_TW":"QQ音樂聽歌識曲",
+		"zh_CN":"QQ音乐听歌识曲",
+		"ko":"QQ音乐听歌识曲",
+		"ja":"QQ音乐听歌识曲",
+		"ru":"QQ音乐听歌识曲",
+		"fr_CA":"QQ音乐听歌识曲",
+		"es_US":"QQ音乐听歌识曲",
+		"pt":"QQ音乐听歌识曲",
+		"pt_BR":"QQ音乐听歌识曲",
+		"pl":"QQ音乐听歌识曲",
+		"el":"QQ音乐听歌识曲",
+		"tr":"QQ音乐听歌识曲",
+		"th":"QQ音乐听歌识曲",
+		"hu":"QQ音乐听歌识曲",
+		"ro":"QQ音乐听歌识曲",
+		"sv":"QQ音乐听歌识曲",
+		"sk":"QQ音乐听歌识曲",
+		"cs":"QQ音乐听歌识曲",
+		"sl":"QQ音乐听歌识曲",
+		"da":"QQ音乐听歌识曲",
+		"no":"QQ音乐听歌识曲",
+		"fi":"QQ音乐听歌识曲"
+	},
+	"hmiCategory":"Radio",
+	"supportedBrands":[
+		"BMW",
+		"MINI"
+	],
+	"id":"23AD6F78-FA80-4220-B86A-D5173761E64F",
+	"launchUrl":"identifytrack:\/\/com.bmw.a4a\/",
+	"icon":"img\/23AD6F78-FA80-4220-B86A-D5173761E64F.png",
+	"version":"1.0",
+	"mainStateId":103, 
+	"entryButtonId":106,
+	"weight":33468,
+	"additionalEntryButtons" : [
+		{
+			"hmiCategory":"OnlineServices",
+			"entryButtonId":107,
+			"weight":32768
+		}
+	],
+	"name":"IdentifyTrack"
+}

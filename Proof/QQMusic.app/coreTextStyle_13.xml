@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <priority>13</priority>
+    <sid>txtChsSimple13</sid>
+    <thumbImage>text_style_chs_13.png</thumbImage>
+    <defaultFontName>FZQingKeBenYueSongS-R-GB</defaultFontName>
+    <parameters>
+        <style>2</style>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <isWrap>YES</isWrap>
+        <maxTextwidth>0,0</maxTextwidth>
+        <fontSize>30</fontSize>
+        <lineSpacing>16</lineSpacing>
+        <margin>33,33,33,33</margin>
+        <alignment>0</alignment>
+        <additionalText fontText="“" fontName="FZLTXIHJW--GB1-0" fontSize="30" fontOrigin="0,-10" withLine="0"/>
+        <additionalText fontText="”" fontName="FZLTXIHJW--GB1-0" fontSize="30" fontOrigin="-0,33" withLine="-0"/>
+    </parameters>
+</models>

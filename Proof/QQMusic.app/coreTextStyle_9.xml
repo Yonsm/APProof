@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <sid>txtChsSimple9</sid>
+    <thumbImage>text_style_chs_9.png</thumbImage>
+    <defaultFontName>FZQingKeBenYueSongS-R-GB</defaultFontName>
+    <parameters>
+        <style>3</style>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <fontSize>24</fontSize>
+        <isWrap>YES</isWrap>
+        <maxTextwidth>23,23</maxTextwidth>
+        <kern>9</kern>
+        <lineSpacing>12</lineSpacing>
+        <margin>2,6,2,6</margin>
+        <alignment>2</alignment>
+        <upperOrLower>1</upperOrLower>
+        <lineDraw width="3" start="0,0" end="0,-0" length="0"/>
+        <lineDraw width="3" start="-0,0" end="-0,-0" length="0"/>
+    </parameters>
+</models>

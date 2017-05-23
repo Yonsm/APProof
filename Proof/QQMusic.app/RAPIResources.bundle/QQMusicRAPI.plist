@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+ <key>com.tencent.rdm.uuid</key>
+<string>3777e862-6900-4599-a84c-a762cb7c3d9d</string>
+	<key>IDApplicationManifest</key>
+	<dict>
+		<key>name</key>
+		<string>QQMusicRAPI</string>
+		<key>requiresAudioService</key>
+		<true/>
+		<key>requiresCarDataService</key>
+		<true/>
+		<key>requiresMapService</key>
+		<false/>
+		<key>requiresPiaService</key>
+		<false/>
+		<key>requiresTtsService</key>
+		<false/>
+		<key>requiresVoiceRecorderService</key>
+		<false/>
+		<key>supportedHmiTypes</key>
+		<array>
+			<string>ID4</string>
+			<string>ID5</string>
+		</array>
+		<key>token</key>
+		<string>AAAAAAIADQB5AEQAeABWAEUAGwA2ABQASQBOAHQAXQBjAHMAbABBAF0AQgB6AAcAOgBVADYAeQAhAD4AagA9ACsAJgBqAHcAZQBsAHkAIgAoAHAAJwBnACgACABZADQANAAxAEcAYgBfAGMAXABCAHwAdABnAF0ARAB+AH8AQgBdAFYAbQB3ACIAFQBQADcAOwAtAGQAdABrAHoAYgA4ADQAHwA=</string>
+		<key>uniqueIdentifier</key>
+		<string>2278BB60-9823-4EC7-8616-93C5828411F1</string>
+		<key>vendor</key>
+		<string>3rd Party A4A Developer</string>
+		<key>version</key>
+		<string>3.1.0</string>
+	</dict>
+	<key>LaunchUrl</key>
+	<string>qqmusic://com.bmw.a4a/</string>
+	<key>RAPIResourcesVersion</key>
+	<string>3.1.0</string>
+	<key>Signatures</key>
+	<dict>
+		<key>IDApplicationManifestSignature</key>
+		<data>
+		paTpnjJVj0P/TAYD8JOi0kldAqWAwQv1wsIbypfabBUSO0xVWLHc4w5gR8kO
+		aZuieZmRH33VY05tFCAOQbD+91mummRl+E69b1BP9kjMFThZ+Zj5VHjn3cWE
+		6B+m2TIn3AQeS+Ef+GyOoFLLoe0BeDcEdYsUHOMOGqyyEYgptuFy8gNkl/CS
+		t0sduu6dj8kevqAtHihZiRZsqpFnOxuRf/K9F5NVnxgYcDbLGeMO4L8Y/opa
+		rvcSENNUXruU7bh9
+		</data>
+	</dict>
+</dict>
+</plist>

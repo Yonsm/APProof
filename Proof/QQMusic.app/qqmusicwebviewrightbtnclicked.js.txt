@@ -1,0 +1,7 @@
+;(function(){
+	try{
+		var event = window.document.createEvent("Events");
+		event.initEvent("QQMusicRightBtnClick", true, true);
+		window.document.dispatchEvent(event);
+	}catch(e){}
+})();

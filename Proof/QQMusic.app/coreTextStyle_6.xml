@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <sid>txtChsSimple6</sid>
+    <thumbImage>text_style_chs_6.png</thumbImage>
+    <defaultFontName>FZQingKeBenYueSongS-R-GB</defaultFontName>
+    <parameters>
+        <style>3</style>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <isWrap>YES</isWrap>
+        <maxTextwidth>23,23</maxTextwidth>
+        <fontSize>24</fontSize>
+        <margin>4,4,4,4</margin>
+        <alignment>2</alignment>
+        <kern>4</kern>
+        <lineSpacing>18</lineSpacing>
+        <upperOrLower>1</upperOrLower>
+    </parameters>
+</models>

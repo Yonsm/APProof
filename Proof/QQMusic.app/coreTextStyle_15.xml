@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <priority>2</priority>
+    <sid>txtChsSimple15</sid>
+    <name>简约之美</name>
+    <thumbImage>text_style_chs_15.png</thumbImage>
+    <defaultFontName>FZQingKeBenYueSongS-R-GB</defaultFontName>
+    <parameters>
+        <style>2</style>
+        <isWrap>YES</isWrap>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <margin>0,0,0,0</margin>
+        <kern>-2</kern>
+        <lineSpacing>0</lineSpacing>
+        <fontSize>30</fontSize>
+        <alignment>2</alignment>
+        <maxTextwidth>23,23</maxTextwidth>
+    </parameters>
+</models>

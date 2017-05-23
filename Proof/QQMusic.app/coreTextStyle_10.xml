@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+    <priority>10</priority>
+    <sid>txtChsSimple10</sid>
+    <thumbImage>text_style_chs_10.png</thumbImage>
+    <defaultFontName>DFPLiJinHeiW8</defaultFontName>
+    <parameters>
+        <style>1</style>
+        <backgroundColor>1,1,1,0</backgroundColor>
+        <isWrap>YES</isWrap>
+        <lineSpacing>6</lineSpacing>
+        <margin>4,4,4,4</margin>
+        <maxTextwidth>187</maxTextwidth>
+        <alignment>2</alignment>
+        <minFontArray>22,34,15</minFontArray>
+        <upperOrLower>1</upperOrLower>
+        <lineDraw width="4" start="0,-0" end="-0,-0" length="0"/>
+    </parameters>
+</models>

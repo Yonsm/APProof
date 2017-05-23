@@ -1,0 +1,26 @@
+{
+    "groups":[{
+              "group":[{"zoneabbreviation":"hk", "zonename":"香港"},
+                       {"zoneabbreviation":"my", "zonename":"马来西亚"},
+                       {"zoneabbreviation":"id", "zonename":"印度尼西亚"},
+                       {"zoneabbreviation":"th", "zonename":"泰国"},
+                       {"zoneabbreviation":"mo", "zonename":"澳门"}]
+              },
+              {
+              "group":[{"zoneabbreviation":"jp", "zonename":"日本"},
+                       {"zoneabbreviation":"sg", "zonename":"新加坡"},
+                       {"zoneabbreviation":"kr", "zonename":"韩国"},
+                       {"zoneabbreviation":"us", "zonename":"美国"},
+                       {"zoneabbreviation":"dk", "zonename":"丹麦"},
+                       {"zoneabbreviation":"uk", "zonename":"英国"},
+                       {"zoneabbreviation":"ru", "zonename":"俄罗斯"},
+                       {"zoneabbreviation":"bg", "zonename":"保加利亚"}]
+              },
+              {
+              "group":[{"zoneabbreviation":"mu", "zonename":"毛里求斯"},
+                       {"zoneabbreviation":"mr", "zonename":"毛里塔尼亚"},
+                       {"zoneabbreviation":"ir", "zonename":"伊朗"},
+                       {"zoneabbreviation":"fj", "zonename":"斐济"}]
+              }
+              ]
+}
