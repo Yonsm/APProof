@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		246BEA761ED423F300AE0402 /* Main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA741ED423F300AE0402 /* Main.mm */; };
 		246BEA771ED423F300AE0402 /* Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA751ED423F300AE0402 /* Prefix.pch */; };
-		246BEA7A1ED4260300AE0402 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 246BEA791ED4260300AE0402 /* Info.plist */; };
 		246BEA801ED4267C00AE0402 /* HookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7C1ED4267C00AE0402 /* HookUtil.h */; };
 		246BEA811ED4267C00AE0402 /* HookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA7D1ED4267C00AE0402 /* HookUtil.m */; };
 		246BEA821ED4267C00AE0402 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7E1ED4267C00AE0402 /* Macro.h */; };
@@ -158,7 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246BEA7A1ED4260300AE0402 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
