@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "246BEA201ED421BA00AE0402"
+               BlueprintIdentifier = "246BEA431ED4228900AE0402"
                BuildableName = "Armor.app"
                BlueprintName = "Armor"
                ReferencedContainer = "container:Armor.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "246BEA201ED421BA00AE0402"
+            BlueprintIdentifier = "246BEA431ED4228900AE0402"
             BuildableName = "Armor.app"
             BlueprintName = "Armor"
             ReferencedContainer = "container:Armor.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "246BEA201ED421BA00AE0402"
+            BlueprintIdentifier = "246BEA431ED4228900AE0402"
             BuildableName = "Armor.app"
             BlueprintName = "Armor"
             ReferencedContainer = "container:Armor.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "246BEA201ED421BA00AE0402"
+            BlueprintIdentifier = "246BEA431ED4228900AE0402"
             BuildableName = "Armor.app"
             BlueprintName = "Armor"
             ReferencedContainer = "container:Armor.xcodeproj">
