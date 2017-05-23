@@ -1,8 +1,6 @@
 
 #define TEST
 
-//#import <Foundation/Foundation.h>
-
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #endif
@@ -11,6 +9,5 @@
 
 #ifdef __OBJC__
 #import "NSUtil.h"
+#import "HookUtil.h"
 #endif
-
-//#import "HookUtil.h"
