@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenDynamicLayer</key>
+	<string>false</string>
+	<key>forbiddenAll3DArea</key>
+	<string>false</string>
+	<key>forbiddenFavoritePointClicked</key>
+	<string>false</string>
+	<key>forbiddenGPSClicked</key>
+	<string>false</string>
+	<key>forbiddenInteractionPointClicked</key>
+	<string>false</string>
+	<key>forbiddenMapLongPressed</key>
+	<string>false</string>
+	<key>forbiddenMapPointClicked</key>
+	<string>false</string>
+	<key>forbiddenMapTMC</key>
+	<string>custom</string>
+	<key>forbiddenShowCityScenicSwitchBtn</key>
+	<string>false</string>
+	<key>forbiddenShowFavorLayer</key>
+	<string>false</string>
+	<key>forbiddenShowIndoorLayer</key>
+	<string>false</string>
+	<key>forbiddenShowLayersBtn</key>
+	<string>false</string>
+	<key>forbiddenShowMainLayerFavor</key>
+	<string>false</string>
+	<key>forbiddenShowMainLayerInteraction</key>
+	<string>false</string>
+	<key>forbiddenSkinLayer</key>
+	<string>false</string>
+	<key>forbiddenSmartScenic</key>
+	<string>false</string>
+</dict>
+</plist>

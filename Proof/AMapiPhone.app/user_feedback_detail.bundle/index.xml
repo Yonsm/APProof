@@ -1,0 +1,136 @@
+<ui title="反馈详情">
+    <container>
+        <list id = "feedback_scroll" bgcolor = "#ededed">
+            <!--用户反馈类型-->
+            <cell id ="userFeedbackType" orientation="vertical" height="wrap" width = "fill" bgcolor = "#ededed">
+                <label id = "userFeedbackTime" font = "26" textcolor="#999999" height = "wrap" width = "fill"
+                align="center" padding="46,0,16,0" />
+                <panel width="fill" height="wrap" padding="16,0,23,0">
+                    <layout id = "feedbackUserIcon" height = "70" width = "70" panel_align="right_top" margin="0,9,0,24" corner_radius = "35" default_bgimage="ic_user_default.png"/>
+                    <layout id = "dialogBg" orientation="vertical" height="wrap" width="fill" leftof = "feedbackUserIcon" bgcolor = "#76bff6" margin="0,40,0,18" border_width="1"  border_color="#50b1fa" corner_radius = "4">
+                        <layout orientation="horizontal" width="fill" height="wrap">
+                            <image id="userFeedbackPoiErrorIcon" width="36" height="36" margin="20,24,20,5"/>
+                            <label id = "userFeedbackPoiErrorTitle" width="fill" height = "wrap" font = "32" textcolor="#ffffff" align = "left_center" padding="20,5,20,20"  line = "99"/>
+                        </layout>
+                        <label width="fill" height="1" bgcolor="#ffffffb2" margin="0,24,0,24"/>
+                        <label id = "userFeedbackProblemType" width="fill" height = "wrap" font = "28" textcolor="#ffffff" align = "left_center" padding="20,24,10,24" line = "99" />
+                        <label id = "userFeedbackProblemDescribe" width="fill" height = "wrap" font = "28" textcolor="#ffffff"
+                        align = "left_center" padding="10,24,10,24" line = "99" />
+                        <label id = "userFeedbackCorrectName" width="fill" height = "wrap" font = "28" textcolor="#ffffff"
+                        align = "left_center" padding="10,24,10,24" line = "99" />
+                        <label id = "userFeedbackCorrectAddress" width="fill" height = "wrap" font = "28" textcolor="#ffffff"
+                        align = "left_center" padding="10,24,10,24" line = "99" />
+                        <label id = "userFeedbackBelongLine" width="fill" height = "wrap" font = "28" textcolor="#ffffff"
+                        align = "left_center" padding="10,24,10,24" line = "99" />
+                        <label id = "userFeedbackTel" width="fill" height = "wrap" font = "28" textcolor="#ffffff"
+                        align = "left_center" padding="10,24,10,24" line = "99" />
+                        <label id = "userFeedbackContact" width="fill" height = "wrap" font = "28" textcolor="#ffffff"
+                        align = "left_center" padding="10,24,30,24" line = "99" />
+                    </layout>
+                    <image id="dialogBgTriangle" height="33" width="17" panel_align="right_top" margin="20,0,0,105"/>
+                </panel>
+            </cell>
+            
+            <!--高德员工有Url的信息模板-->
+            <cell id ="gdStaffDisposeMsg" orientation = "vertical" height="wrap" width="fill" margin = "23,0,23,0" bgcolor = "#ededed">
+                <label id = "gdStaffDisposeTime" height="wrap" width="fill" font="26"
+                padding="23,0,16,0" textcolor="#999999" align="center"/>
+                <panel height="wrap" width="fill" margin = "16,0,0,0">
+                    <image id="gdStaffIcon" height="70" width="70" margin = "0,24,0,9" panel_align="left_top"
+                    corner_radius = "35"/>
+                    <layout id = "dialogBg"  orientation="vertical" width="fill" height="wrap" margin = "0,17,23,40" rightof="gdStaffIcon"
+                        bgcolor="#ffffff" border_width="1" border_color="#d5d5d5" corner_radius="4">
+                        <label id="gdStaffDisposeState" width="fill" height="wrap" font="32"
+                        padding = "20,24,20,24" align = "left_center" textcolor="#333333" line="99"/>
+                        <label width="fill" height="1" bgcolor="#b4b4b4b2" margin="0,24,0,24"/>
+                        <label id="gdStaffDisposeDescribe" width="fill" height="wrap" font = "28" textcolor="#666666"
+                        padding="19,24,15,24" align = "left_center" line="99"/>
+                        <panel width="fill" height="wrap" margin="15,0,30,0">
+                            <label id = "gdSchemeMsg" width="wrap" height="wrap" padding="0,10,0,24" panel_align="right_center" font="22" textcolor="#0091ff"/>
+                        </panel>
+                    </layout>
+                    <image id="dialogBgTriangle" height="33" width="17" panel_align="left_top" margin="20,104,0,17"/>
+
+                </panel>
+            </cell>
+    
+            <!--高德员工处理中进行催促的布局-->
+            <cell id ="gdStaffUrgeDisposeMsg" orientation = "vertical" height="wrap" width="fill" margin = "23,0,23,0" bgcolor = "#ededed">
+                <label id = "gdStaffDisposeTime" height="wrap" width="fill" font="26"
+                padding="23,0,16,0" textcolor="#999999" align="center"/>
+                <panel height="wrap" width="fill" margin = "16,0,0,0">
+                    <image id="gdStaffIcon" height="70" width="70" margin = "0,24,0,9" panel_align="left_top"
+                    corner_radius = "35"/>
+                    <layout id = "dialogBg" orientation="vertical" width="fill" height="wrap" margin = "0,17,23,40" rightof="gdStaffIcon"
+                        bgcolor="#ffffff" border_width="1" border_color="#d5d5d5" corner_radius="4">
+                        <panel width="fill" height="wrap">
+                            <label id="gdStaffDisposeState" width="fill" height="wrap" font="32"
+                            padding = "20,24,20,24" align = "left_center" textcolor="#333333" line="99"/>
+                            <button id="userUrgeDispossBtn" width="120" height="42" font="24" margin="12,0,12,24" corner_radius="4" panel_align="right_center"/>
+                            <image id="urgnIcon" width="24" height="24" leftof="userUrgeDispossBtn" margin="28,0,0,-20" />
+                        </panel>
+                        <label width="fill" height="1" bgcolor="#bebebe" margin="0,24,0,24"/>
+                        <label id="gdStaffDisposeDescribe" width="fill" height="wrap" font = "28" textcolor="#666666"
+                        padding="19,24,15,24" align = "left_center" line="99"/>
+                        <panel width="fill" height="wrap" margin="15,0,30,0">
+                            <label id = "gdSchemeMsg" width="wrap" height="wrap" padding="0,10,0,24" panel_align="right_center"
+                            font="22" textcolor="#0091ff"/>
+                        </panel>
+                    </layout>
+                    <image id="dialogBgTriangle" height="33" width="17" panel_align="left_top" margin="20,104,0,17"/>
+                </panel>
+            </cell>
+            
+            <!--高德员工没有Url的信息-->
+            <cell id ="gdStaffNotUrlDisposeMsg" orientation = "vertical" height="wrap" width="fill" padding="0,0,10,0" bgcolor = "#ededed">
+                <label id = "gdStaffDisposeTime" height="wrap" width="fill" font="26"
+                padding="23,0,16,0" textcolor="#999999" align="center"/>
+                <panel height="wrap" width="fill" margin = "16,0,10,0">
+                    <image id="gdStaffIcon" height="70" width="70" margin = "0,24,0,9" corner_radius = "35"/>
+                    <layout id = "dialogBg" orientation="vertical" width="fill" height="wrap" margin = "0,17,23,40" bgcolor="#ffffff" border_width="1" border_color="#d5d5d5" corner_radius="4" rightof = "gdStaffIcon">
+                        <label id="gdStaffDisposeState" width="fill" height="wrap" font="32"
+                        padding = "20,24,20,24" align = "left_center" textcolor="#333333" line="99"/>
+                        <label width="fill" height="1" bgcolor="#bebebe" margin="0,24,0,24"/>
+                        <label id="gdStaffDisposeDescribe" width="fill" height="wrap" font = "28" textcolor="#666666"
+                        padding="20,24,30,24" align = "left_center" line="99"/>
+                    </layout>
+                    <image id="dialogBgTriangle" height="33" width="17" panel_align="left_top" margin="20,104,0,17"/>
+                </panel>
+            </cell>
+            
+            <!--服务评价-->
+            <cell id="serviceEvaluation" orientation="horizontal" width="fill" height="wrap" bgcolor = "#ededed">
+                <panel  width="fill" height="wrap"  margin="10,0,23,40">
+                    <button id = "evaluationSatisfiedAction" width = "100" height=  "66" font = "28" panel_align = "right_center"
+                    textcolor="#0091ff" margin="0,5,0,0" bgcolor = "#ffffff" border_width = "1" border_color ="#d5d5d5" corner_radius = "2"
+                    style = "aa"/>
+                    <button id = "evaluationUnsatisfiedAction" width="100" height="66" font="28" leftof = "evaluationSatisfiedAction"
+                    bgcolor="#ffffff" margin = "0,10,0,5" textcolor = "#666666" border_width="1" border_color ="#d5d5d5" corner_radius = "2"/>
+                    <label id="requestServiceEvaluateText" height="66" width="wrap" font="28" textcolor="#999999"
+                    leftof="evaluationUnsatisfiedAction" align="center" margin="0,0,0,10"/>
+                </panel>
+            </cell>
+        
+            <!--分享部分-->
+            <cell id = "feedbackTimeAndShare" orientation="vertical" height="wrap" width="fill" margin="23,0,0,0"
+                bgcolor = "#f9f9f9ef" style = "shareStyle">
+                <label height="1"  width="fill" bgcolor="c3c3c366"/>
+                <label id = "feedbackDisposeTime" height="wrap" width="fill" align="center" padding="28,0,12,0"
+                font="32" textcolor="#666666" line="99"/>
+                <label id = "feedbackDisposeShare" height="wrap" width="fill" align="center_top" font="28"
+                textcolor="#0091ff" padding="12,0,28,0" line="99"/>
+            </cell>
+            
+            <!--补充信息部分-->
+            <cell id ="supplementaryMoreMsg" orientation = "vertical" height="wrap" width="fill" margin="20,0,20,0">
+                <label height="1"  width="fill" bgcolor="c3c3c366"/>
+                <panel  width="fill" height="wrap" margin="20,0,0,0">
+                    <layout orientation="horizontal" width="fill" height="36" panel_align="center">
+                        <label id = "supplementaryMoreText" height="28" width="wrap"  align="center" font="28" textcolor="#0091ff" line="99"/>
+                        <image id = "writePencilIcon" height="36" width="36" rightof = "supplementaryMoreText" margin="0,0,0,40"/>
+                    </layout>
+                </panel>
+            </cell>
+        </list>
+    </container>
+</ui>

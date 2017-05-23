@@ -1,0 +1,354 @@
+
+<Xml>
+    <ElementTrack>
+        <ElementRoute>
+            <Range>100</Range>
+            <Speed>20</Speed>
+            <Tilt>20</Tilt>
+            <ElementStationPass>
+                <TORID>J50F002020_775182</TORID>
+                <Longitude>116.4839172711</Longitude>
+                <Latitude> 39.9084433280</Latitude>
+                <Altitude>  0.3436573851</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775182</TORID>
+                <Longitude>116.4837830946</Longitude>
+                <Latitude> 39.9084437395</Latitude>
+                <Altitude>  0.3069928953</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775182</TORID>
+                <Longitude>116.4836233181</Longitude>
+                <Latitude> 39.9084440108</Latitude>
+                <Altitude>  0.3000000119</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_766961</TORID>
+                <Longitude>116.4833249240</Longitude>
+                <Latitude> 39.9084448246</Latitude>
+                <Altitude>  0.2998858839</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775184</TORID>
+                <Longitude>116.4828955109</Longitude>
+                <Latitude> 39.9084458522</Latitude>
+                <Altitude>  0.2999357786</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775185</TORID>
+                <Longitude>116.4827579753</Longitude>
+                <Latitude> 39.9084461809</Latitude>
+                <Altitude>  0.2999517592</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_671275</TORID>
+                <Longitude>116.4823494466</Longitude>
+                <Latitude> 39.9084505212</Latitude>
+                <Altitude>  0.2999774935</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775250</TORID>
+                <Longitude>116.4820309490</Longitude>
+                <Latitude> 39.9084523800</Latitude>
+                <Altitude>  0.2999114024</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775250</TORID>
+                <Longitude>116.4815589735</Longitude>
+                <Latitude> 39.9084551328</Latitude>
+                <Altitude>  0.2998134634</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775226</TORID>
+                <Longitude>116.4814621311</Longitude>
+                <Latitude> 39.9084556753</Latitude>
+                <Altitude>  0.2997842655</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775226</TORID>
+                <Longitude>116.4808680556</Longitude>
+                <Latitude> 39.9084594730</Latitude>
+                <Altitude>  0.2999726422</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775226</TORID>
+                <Longitude>116.4806255349</Longitude>
+                <Latitude> 39.9084613150</Latitude>
+                <Altitude>  0.2998754850</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775227</TORID>
+                <Longitude>116.4794026693</Longitude>
+                <Latitude> 39.9084705950</Latitude>
+                <Altitude>  0.2993855877</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_671285</TORID>
+                <Longitude>116.4791392687</Longitude>
+                <Latitude> 39.9084724939</Latitude>
+                <Altitude>  0.2995325411</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_671287</TORID>
+                <Longitude>116.4790237088</Longitude>
+                <Latitude> 39.9084735789</Latitude>
+                <Altitude>  0.2996337572</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_194963</TORID>
+                <Longitude>116.4790041775</Longitude>
+                <Latitude> 39.9084738502</Latitude>
+                <Altitude>  0.2999470308</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4789420573</Longitude>
+                <Latitude> 39.9084733077</Latitude>
+                <Altitude>  0.2997080271</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4789252387</Longitude>
+                <Latitude> 39.9084714088</Latitude>
+                <Altitude>  0.2997224069</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4789084201</Longitude>
+                <Latitude> 39.9084686961</Latitude>
+                <Altitude>  0.2997367360</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4788916016</Longitude>
+                <Latitude> 39.9084646271</Latitude>
+                <Altitude>  0.2997510191</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4788753255</Longitude>
+                <Latitude> 39.9084597443</Latitude>
+                <Altitude>  0.2997652502</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4788590495</Longitude>
+                <Latitude> 39.9084540477</Latitude>
+                <Altitude>  0.2997794137</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4788435872</Longitude>
+                <Latitude> 39.9084478085</Latitude>
+                <Altitude>  0.2997934850</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4788281250</Longitude>
+                <Latitude> 39.9084410269</Latitude>
+                <Altitude>  0.2998074319</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4788129340</Longitude>
+                <Latitude> 39.9084339739</Latitude>
+                <Altitude>  0.2998212152</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4787982856</Longitude>
+                <Latitude> 39.9084263784</Latitude>
+                <Altitude>  0.2998347899</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10815</TORID>
+                <Longitude>116.4787841797</Longitude>
+                <Latitude> 39.9084185117</Latitude>
+                <Altitude>  0.2998481058</Altitude>
+                <TurnPoint>TurnPoint</TurnPoint>
+                <TurnPicture>8</TurnPicture>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787695312</Longitude>
+                <Latitude> 39.9084098311</Latitude>
+                <Altitude>  0.2998291999</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787584093</Longitude>
+                <Latitude> 39.9084019644</Latitude>
+                <Altitude>  0.2998173051</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787483724</Longitude>
+                <Latitude> 39.9083932838</Latitude>
+                <Altitude>  0.2998145223</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787396918</Longitude>
+                <Latitude> 39.9083835182</Latitude>
+                <Altitude>  0.2998110643</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787323676</Longitude>
+                <Latitude> 39.9083732100</Latitude>
+                <Altitude>  0.2998082545</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787258572</Longitude>
+                <Latitude> 39.9083620881</Latitude>
+                <Altitude>  0.2998059085</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787201606</Longitude>
+                <Latitude> 39.9083509661</Latitude>
+                <Altitude>  0.2998032672</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787155490</Longitude>
+                <Latitude> 39.9083395729</Latitude>
+                <Altitude>  0.2998065930</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787114800</Longitude>
+                <Latitude> 39.9083276371</Latitude>
+                <Altitude>  0.2998062847</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787079536</Longitude>
+                <Latitude> 39.9083159726</Latitude>
+                <Altitude>  0.2998054055</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787049696</Longitude>
+                <Latitude> 39.9083043081</Latitude>
+                <Altitude>  0.2998419553</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787000868</Longitude>
+                <Latitude> 39.9082831493</Latitude>
+                <Altitude>  0.2998428699</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4786968316</Longitude>
+                <Latitude> 39.9082614479</Latitude>
+                <Altitude>  0.2998414235</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4786952040</Longitude>
+                <Latitude> 39.9082400177</Latitude>
+                <Altitude>  0.2998432182</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4786954753</Longitude>
+                <Latitude> 39.9082188589</Latitude>
+                <Altitude>  0.2998466212</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4786973741</Longitude>
+                <Latitude> 39.9081982426</Latitude>
+                <Altitude>  0.2998502962</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787011719</Longitude>
+                <Latitude> 39.9081784401</Latitude>
+                <Altitude>  0.2998548290</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787068685</Longitude>
+                <Latitude> 39.9081597226</Latitude>
+                <Altitude>  0.2998604430</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787144640</Longitude>
+                <Latitude> 39.9081423615</Latitude>
+                <Altitude>  0.2998649059</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787236871</Longitude>
+                <Latitude> 39.9081268993</Latitude>
+                <Altitude>  0.2998715062</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787350803</Longitude>
+                <Latitude> 39.9081136072</Latitude>
+                <Altitude>  0.2998742145</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787483724</Longitude>
+                <Latitude> 39.9081024852</Latitude>
+                <Altitude>  0.2998795984</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787635634</Longitude>
+                <Latitude> 39.9080940759</Latitude>
+                <Altitude>  0.2998892609</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4787809245</Longitude>
+                <Latitude> 39.9080886506</Latitude>
+                <Altitude>  0.2998912716</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_10816</TORID>
+                <Longitude>116.4788001845</Longitude>
+                <Latitude> 39.9080864804</Latitude>
+                <Altitude>  0.2998939110</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775204</TORID>
+                <Longitude>116.4790915437</Longitude>
+                <Latitude> 39.9080824035</Latitude>
+                <Altitude>  0.2994517024</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775203</TORID>
+                <Longitude>116.4793041992</Longitude>
+                <Latitude> 39.9080794275</Latitude>
+                <Altitude>  0.2991289459</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775203</TORID>
+                <Longitude>116.4796603733</Longitude>
+                <Latitude> 39.9080745447</Latitude>
+                <Altitude>  0.2999114543</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775203</TORID>
+                <Longitude>116.4798277452</Longitude>
+                <Latitude> 39.9080721033</Latitude>
+                <Altitude>  0.2998988265</Altitude>
+            </ElementStationPass>
+            <ElementStationPass>
+                <TORID>J50F002020_775203</TORID>
+                <Longitude>116.4799761285</Longitude>
+                <Latitude> 39.9080702044</Latitude>
+                <Altitude>  0.2998745330</Altitude>
+            </ElementStationPass>
+        </ElementRoute>
+    </ElementTrack>
+</Xml>

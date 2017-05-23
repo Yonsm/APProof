@@ -1,0 +1,49 @@
+# 注释只能在新的一行，"#"号后加注释，不能在注册的语句末尾增加注释
+# 注册的KEY和Value之间应使用:分开
+# 每一行只能注册一个业务逻辑类
+# 每一行的KEY和Value前面和后面可以增加无线空格（可以实现对齐美观）
+# 标点符号使用英文标点符号
+# 注册行使用的“"”、“'”和“@”符号会自动删除
+# 对于无法解析的行会做容错处理，忽略掉该行
+
+驾车导航.语音服务.文本获取命令    :  LTMAOSVANaviCommandRequest
+业务功能.神马.语音监听            :   LTMVoiceNavigationBizLogic
+业务功能.获取语音命令             :LTMVoiceNavigationCommandBizLogic
+
+驾车导航.导航.导航设置.获取导航设置数据              : NMGetCommonNaviSettingDataBizLogic
+驾车导航.导航.导航设置.获取辅助功能数据              : NMGetAssisDataBizLogic
+驾车导航.导航.导航设置.切换蓝牙电话通道开关             : LTMToggleBluetoothPhoneChannelBizLogic
+
+驾车导航.导航.驾驶行为.请求历史列表                    : NMGetDriverBehaviorListRequest
+驾车导航.导航.驾驶行为.请求积分                       : NMGetDriverIncomeInfoRequest
+驾车导航.导航.驾驶行为.上传驾驶数据                    : NMUploadUBIDataRequest
+驾车导航.导航.驾驶行为.加载本地历史列表                     : NMUBIGetLocalDataLogic
+驾车导航.导航.驾驶行为.加载历史列表                 : NMUBIGetHistoryListLogic
+驾车导航.导航.驾驶行为.获取积分                     : NMUBIGetIncomeInfoLogic
+驾车导航.导航.驾驶行为.上传缓存的UBI数据             : NMUploadUBIDataLogic
+驾车导航.导航.驾驶行为.请求删除记录             : NMDeleteDriverBehaviorRequest
+路线规划.贴条高发.网络获取贴条数据                          : LTMAOSHighStickerRequest
+路线规划.贴条高发.处理贴条显示数据                          : LTMGetHightStickerModelBizLogic
+驾车导航.路线规划.限行图层.请求限行区域              : AMAOSCarRestictRequest
+驾车导航.路线规划.限行图层.获取限行区域              : NMCarRestictGetDataLogic
+驾车导航.路线规划.沿途搜                           : LTMPathAlongWayRequest
+驾车导航.路线规划.路线结果.路线请求                  : LTMCarPathRequest
+驾车导航.路况提醒.订阅信息查询                      : LTMAOSTrafficBookInfoRequest
+驾车导航.路况提醒.路线信息                         : LTMAOSTrafficPathInfoRequest
+驾车导航.路况提醒.批量路况订阅                      : LTMAOSTrafficBookExRequest
+驾车导航.路况提醒.编辑订阅信息                      : LTMAOSTrafficBookRequest
+驾车导航.路况提醒.同步订阅版本号                    : LTMAOSTrafficBookDivRequest
+key-value: home-家 company-公司
+驾车导航.通勤模式.获取家和公司                      : NMGetHomeAndCompanyBizLogic
+驾车导航.电子眼敢用敢赔.请求                         : AMAOSTRCCompensateRequest
+驾车导航.线路报错.上报请求                          : AMAOSCarReportRequest
+
+路线.路线分享                                     : LTMPathShareBiz
+出行.查询.公交结果.铁路                           :AMAOSCityRailwayRequest
+驾车导航.通勤.挖据家和公司                           :NMDigHomeCompanyRequest
+
+frog.displist.request               :       LTMFrogDisplistRequest
+frog.feedback.request               :       LTMFrogFeedbackRequest
+frog.upload.request                 :       LTMFrogUploadRequest
+
+

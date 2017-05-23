@@ -1,0 +1,19 @@
+
+storge.array.write                  :       NMStorgeArrayWriteBizLogic
+storge.array.read                   :       NMStorgeArrayReadBizLogic
+storge.dictionary.write             :       NMStorgeDictionaryWriteBizLogic
+storge.dictionary.read              :       NMStorgeDictionaryReadBizLogic
+storge.data.write                   :       NMStorgeDataWriteBizLogic
+storge.data.read                    :       NMStorgeDataReadBizLogic
+storge.string.write                 :       NMStorgeStringWriteBizLogic
+storge.string.read                  :       NMStorgeStringReadBizLogic
+storge.userdefault.write            :       NMStorgeUserdefaultWriteBizLogic
+storge.userdefault.read             :       NMStorgeUserdefaultReadBizLogic
+basemap.shorturl.request            :       LTMAOSShortUrlRequest
+activity.fetch                      :       LTMAOSActivityFetchRequest
+wifiinfo.report                     :       LTMAOSWifiInfoReportRequest
+
+DynamicUI.update.updateHost         :       LTMAOSDynamicUIUpdateHostRequest
+
+mainmap.homecompany.layerrequest           :       LTMAOSHomeCompanyLayerRequest
+

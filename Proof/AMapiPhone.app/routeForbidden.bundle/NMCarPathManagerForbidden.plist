@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenFavoritePointClicked</key>
+	<string>true</string>
+	<key>forbiddenInteractionPointClicked</key>
+	<string>false</string>
+	<key>forbiddenLayerPointHighlight</key>
+	<string>custom</string>
+	<key>forbiddenMapLongPressed</key>
+	<string>custom</string>
+	<key>forbiddenScreenShotsShare</key>
+	<string>custom</string>
+	<key>forbiddenShowFloorSelector</key>
+	<string>custom</string>
+	<key>forbiddenShowIndoorLayer</key>
+	<string>true</string>
+	<key>forbiddenShowInteractionLayer</key>
+	<string>custom</string>
+	<key>forbiddenShowLayersBtn</key>
+	<string>custom</string>
+	<key>forbiddenShowMainLayer</key>
+	<string>custom</string>
+	<key>forbiddenShowMainLayerInteraction</key>
+	<string>custom</string>
+	<key>forbiddenShowMapFeedBackBtn</key>
+	<string>custom</string>
+	<key>forbiddenShowTrafficBtn</key>
+	<string>custom</string>
+	<key>forbiddenTapIndoorLayer</key>
+	<string>true</string>
+	<key>needStopNMLayers</key>
+	<string>true</string>
+	<key>shouldShowTraffic</key>
+	<string>custom</string>
+	<key>forbiddenShowGPSOverlay</key>
+	<string>custom</string>
+	<key>forbiddenGuideviewButton</key>
+	<string>true</string>
+	<key>forbiddenTopViewShown</key>
+	<string>true</string>
+	<key>forbiddenBottomViewShown</key>
+	<string>true</string>
+	<key>forbiddenShowCompass</key>
+	<string>custom</string>
+	<key>forbiddenShowBaocuoButton</key>
+	<string>custom</string>
+	<key>needResumePrevManager</key>
+	<string>custom</string>
+	<key>forbidenShowAutoLogo</key>
+	<string>custom</string>
+</dict>
+</plist>

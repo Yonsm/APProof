@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenFavoritePointClicked</key>
+	<string>true</string>
+	<key>forbiddenGuideviewButton</key>
+	<string>true</string>
+	<key>forbiddenShowFavorLayer</key>
+	<string>true</string>
+	<key>forbiddenShowIndoorLayer</key>
+	<string>true</string>
+	<key>forbiddenShowInteractionLayer</key>
+	<string>custom</string>
+	<key>forbiddenShowMainLayer</key>
+	<string>false</string>
+	<key>forbiddenShowMainLayerFavor</key>
+	<string>true</string>
+	<key>forbiddenShowMainLayerInteraction</key>
+	<string>custom</string>
+	<key>forbiddenShowMapFeedBackBtn</key>
+	<string>true</string>
+	<key>needStopNMLayers</key>
+	<string>true</string>
+	<key>forbiddenShowGPSOverlay</key>
+	<string>last-true</string>
+</dict>
+</plist>

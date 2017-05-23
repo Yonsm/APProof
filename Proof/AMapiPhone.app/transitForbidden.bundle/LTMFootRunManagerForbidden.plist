@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenShowGPSOverlay</key>
+	<string>true</string>
+	<key>forbiddenShowTrafficBtn</key>
+	<string>true</string>
+	<key>forbiddenShowMainLayer</key>
+	<string>true</string>
+	<key>forbiddenBottomViewShown</key>
+	<string>true</string>
+	<key>forbiddenTopViewShown</key>
+	<string>true</string>
+	<key>forbiddenShowCompass</key>
+	<string>true</string>
+	<key>forbidenShowAutoLogo</key>
+	<string>custom</string>
+	<key>forbidenShowMapviewScaleLine</key>
+	<string>custom</string>
+	<key>forbiddenShowBaocuoButton</key>
+	<string>custom</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RealtimeBusStateInfoServer</key>
+	<dict>
+		<key>title</key>
+		<string>RealtimeBusStateInfoServer</string>
+		<key>ProductServer</key>
+		<string>http://m5.amap.com/ws/mapapi/realtimebus/linestation/</string>
+		<key>TestServer</key>
+		<string>http://42.156.238.88/ws/mapapi/realtimebus/linestation/</string>
+	</dict>
+	<key>AOSNaviTrackServer</key>
+	<dict>
+		<key>title</key>
+		<string>AOSNaviTrackServer</string>
+		<key>ProductServer</key>
+		<string>http://logs.amap.com/ws/page/upload</string>
+		<key>TestServer</key>
+		<string>http://100.69.213.69:7001/ws/page/upload</string>
+	</dict>
+</dict>
+</plist>

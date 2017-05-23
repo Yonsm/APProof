@@ -1,0 +1,32 @@
+
+<theme>    
+    <default>
+        <style id="button">
+            <state id="normal" textcolor="000000" font="32" bgcolor="FFFFFF"  cornerradius="0"/>
+            <state id="highlight" textcolor="000000" font="32" bgcolor="8A8A8A" cornerradius="0"/>
+            <state id="disable" textcolor="000000" font="32" bgcolor="858585" cornerradius="0"/>
+            <state id="select" textcolor="000000" font="32" bgcolor="8B0000" cornerradius="0"/>
+        </style>
+        
+        <style id="label" textcolor="FFFFFF" bgcolor="000000" font="32" />
+        <style id="input" textcolor="FFFFFF" hint="输入文字" font="32" bgcolor="000000"/>
+        <style id="image" bgcolor="E89890"  scalemode="fill"/>
+        <style id="scrollview" mode="horizontal" bounce="true"/>
+        <style id="layout" bgcolor="000000"/>
+        <style id="list" bgcolor = "FFFFFF"/>
+    </default>
+     
+    
+    
+    <custom>
+      <style id="redbtn">
+         <state id="normal" textcolor="FFFFFF" font="32" bgcolor="FF0000"  cornerradius="10"/>
+         <state id="highlighted" textcolor="000000" font="32" bgcolor="FF0000" cornerradius="0"/>
+         <state id="disabled" textcolor="FFFFFF" font="32" bgcolor="FF0000" cornerradius="0"/>
+         <state id="selected" textcolor="000000" font="32" bgcolor="8B0000" cornerradius="0"/>
+      </style>
+      <style id="bluebtn" textcolor="B9AA8C" font="32" bgcolor="0000FF" cornerradius="0"/>
+      <style id="whitebtn" textcolor="E89890" font="32" bgcolor="FFFFFF" cornerradius="0"/>
+      
+    </custom>
+</theme>

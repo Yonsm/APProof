@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenShowIndoorLayer</key>
+	<string>true</string>
+	<key>forbiddenShowMainLayer</key>
+	<string>last</string>
+	<key>forbiddenShowO2OLayer</key>
+	<string>true</string>
+	<key>forbiddenShowTrafficBtn</key>
+	<string>last</string>
+	<key>forbiddenShowGPSOverlay</key>
+	<string>true</string>
+</dict>
+</plist>

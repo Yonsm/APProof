@@ -1,0 +1,123 @@
+<ui title="银行">
+    <styles>
+        <style default_image="defaultBank.png" height="36" id="otherMoreImg" margin="15,0,15,5" width="36" />
+        <style align="center" font="24" id="otherMoreLabel" textcolor="#333333" width="wrap" />
+    </styles>
+    
+    <container>
+        <list bgcolor="#EBEDF0" id="banklist">
+            <cell bgcolor="#EBEDF0" height="102" id="header" width="fill">
+                <panel bgcolor="#008DFA" height="78" width="fill">
+                    <image default_image="bank.png" height="28" id="image" margin="0,0,0,20" panel_align="right_center"
+                    width="16" />
+                    
+                    <label align="center" font="B24" height="fill" id="distance" leftof="image" margin="0,0,0,5"
+                    textcolor="#FFFFFF" width="wrap" />
+                    
+                    <label align="left_center" font="24" height="fill" id="title" leftof="distance" margin="0,20,0,0"
+                    text="离我最近的ATM" textcolor="#FFFFFF" width="fill" />
+                </panel>
+            </cell>
+            
+            <cell bgcolor="#EBEDF0" height="251" id="bank" width="fill">
+                <layout bgcolor="#CBCBCB" height="1" width="fill" />
+                
+                <layout bgcolor="#FFFFFF" height="225" orientation="horizontal" width="fill">
+                    <layout height="fill" id="findMoreBt" orientation="vertical" width="180">
+                        <image default_image="defaultBank.png" height="68" id="icon" margin="35,56,12,0" width="68" />
+                        
+                        <label align="center" font="24" height="30" id="name" textcolor="#333333" width="fill" />
+                        
+                        <layout bgcolor="#F4F4F4" height="1" margin="29,0,0,0" width="fill" />
+                        
+                        <label align="center" bgcolor="FAFAFA" font="24" height="50" text="查看更多" textcolor="#666666"
+                        width="fill" />
+                    </layout>
+                    
+                    <layout bgcolor="#CBCBCB" height="fill" width="1" />
+                    
+                    <layout height="fill" orientation="vertical" padding="0,20,0,0" width="fill">
+                        <layout height="97" id="hallPOI" orientation="vertical" width="fill">
+                            <panel height="35" margin="16,0,0,20" width="fill">
+                                <label align="center" font="24" height="fill" id="officeDistance" panel_align="right_center"
+                                textcolor="#999999" width="wrap" />
+                                <label align="left_center" font="30" height="fill" leftof="officeDistance" text="营业厅"
+                                textcolor="#333333" width="fill" />
+                            </panel>
+                            
+                            <panel height="30" margin="16,0,0,20" width="fill">
+                                <button font="24" height="fill" id="hallGoBt" panel_align="right_center" text="去这里"
+                                textcolor="#0091FF" width="75" />
+                                <layout bgcolor="#CBCBCB" height="24" id="line1" leftof="hallGoBt" margin="3,12,3,12" width="1" />
+                                <button font="24" height="fill" id="hallDetailBt" leftof="line1" text="详情" textcolor="#0091FF"
+                                width="50" />
+                                <label align="left_center" font="24" height="fill" id="officeAddress" leftof="hallDetailBt"
+                                textcolor="#999999" width="fill" />
+                            </panel>
+                        </layout>
+                        <layout bgcolor="#CBCBCB" height="1" margin="16,0,0,20" width="fill" />
+                        
+                        <layout height="97" id="ATMPOI" orientation="vertical" width="fill">
+                            <panel height="35" margin="16,0,0,20" width="fill">
+                                <label align="center" font="24" height="fill" id="atmDistance" panel_align="right_center"
+                                textcolor="#999999" width="wrap" />
+                                <label align="left_center" font="30" height="fill" leftof="atmDistance" text="ATM"
+                                textcolor="#333333" width="fill" />
+                            </panel>
+                            
+                            <panel height="30" margin="16,0,0,20" width="fill">
+                                <button font="24" height="fill" id="atmGoBt" panel_align="right_center" text="去这里"
+                                textcolor="#0091FF" width="75" />
+                                <layout bgcolor="#CBCBCB" height="24" id="line2" leftof="atmGoBt" margin="3,12,3,12" width="1" />
+                                <button font="24" height="fill" id="atmDetailBt" leftof="line2" text="详情" textcolor="#0091FF"
+                                width="50" />
+                                <label align="left_center" font="24" height="fill" id="atmAddress" leftof="atmDetailBt"
+                                textcolor="#999999" width="fill" />
+                            </panel>
+                        </layout>
+                    </layout>
+                </layout>
+                
+                <layout bgcolor="#CBCBCB" height="1" width="fill" />
+            </cell>
+            
+            <cell bgcolor="#EBEDF0" height="58" id="otherBanksHeader" orientation="vertical">
+                <panel bgcolor="#FFFFFF" height="57" width="fill">
+                    <image height="18" id="otherHeaderImage" image="moreBank.png" margin="0,10,0,20" panel_align="right_center"
+                    width="12" />
+                    
+                    <label align="center" font="22" height="fill" id="otherHeaderMore" leftof="otherHeaderImage" margin="0,0,0,5"
+                    text="更多" textcolor="#0091FF" width="wrap" />
+                    
+                    <label align="left_center" font="28" height="fill" leftof="otherHeaderMore" margin="0,20,0,0" text="其他银行"
+                    textcolor="#333333" width="fill" />
+                </panel>
+                <layout bgcolor="#CBCBCB" height="1" />
+            </cell>
+            
+            <cell bgcolor="#EBEDF0" height="68" id="otherBank" orientation="vertical">
+                <layout bgcolor="#FFFFFF" height="67" orientation="horizontal">
+                    <layout align="center" bgcolor="#FFFFFF" id="leftBank" orientation="horizontal" percent_width="33">
+                        <image style="otherMoreImg" id="otherLeftIcon" />
+                        <label style="otherMoreLabel" id="otherLeftLabel" />
+                    </layout>
+                    <layout bgcolor="#FFFFFF" orientation="horizontal" percent_width="34">
+                        <layout bgcolor="#CBCBCB" margin="15,0,15,0" width="1" />
+                        <layout align="center" id="midBank" orientation="horizontal" width="fill">
+                            <image style="otherMoreImg" id="otherMidIcon" />
+                            <label style="otherMoreLabel" id="otherMidLabel" />
+                        </layout>
+                    </layout>
+                    <layout bgcolor="#FFFFFF" orientation="horizontal" percent_width="33">
+                        <layout bgcolor="#CBCBCB" margin="15,0,15,0" width="1" />
+                        <layout align="center" id="rightBank" orientation="horizontal" width="fill">
+                            <image style="otherMoreImg" id="otherRightIcon" />
+                            <label style="otherMoreLabel" id="otherRightLabel" />
+                        </layout>
+                    </layout>
+                </layout>
+                <layout bgcolor="#CBCBCB" height="1" />
+            </cell>
+        </list>
+    </container>
+</ui>

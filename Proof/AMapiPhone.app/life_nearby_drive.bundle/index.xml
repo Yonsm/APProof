@@ -1,0 +1,83 @@
+<ui extended_title="驾车专题-停车场、加油站">
+
+    <styles>
+        <!-- 快查单词样式 -->
+        <style align="center" bgcolor="#FFFFFF" font="26" height="90" id="quickWordsBtn" textcolor="#333333" />
+        <!-- 垂直分割线样式 -->
+        <style bgcolor="#EAEAEA" id="verticalSpaceLine" width="1" />
+        <!-- 水平分割线样式 -->
+        <style bgcolor="#EAEAEA" height="1" id="horizontalSpaceLine" />
+    </styles>
+
+    <container>
+        <layout bgcolor="#FFFFFF" height="wrap" id="content" orientation="vertical" width="fill">
+
+            <!-- 驾车提示布局 -->
+            <layout align="left_center" height="70" id="reminder" orientation="horizontal" padding="0,30,0,30" width="fill">
+                <label font="28" height="wrap" id="reminderTitle" margin="0,0,0,10" textcolor="#0091FF" width="wrap" />
+
+                <image height="30" id="reminderBubble" margin="0,0,0,10" width="60" />
+
+                <label font="26" height="wrap" id="reminderSubTitle" margin="0,10,0,0" textcolor="#999999" width="fill" />
+            </layout>
+
+            <layout style="horizontalSpaceLine" />
+
+            <!-- 驾车信息布局 -->
+            <layout height="122" orientation="horizontal" width="fill">
+                <panel height="fill" id="info0" margin="26,0,26,0" padding="0,10,0,10" percent_width="33">
+                    <Label align="center_top" font="28" id="infoLabel0" textcolor="#333333" width="fill" />
+                    <Label align="center_bottom" font="24" id="infoSubLabel0" textcolor="#999999" width="fill" />
+                </panel>
+
+                <layout style="verticalSpaceLine" margin="26,0,26,0" />
+
+                <panel height="fill" id="info1" margin="26,0,26,0" padding="0,10,0,10" percent_width="34">
+                    <Label align="center_top" font="28" id="infoLabel1" textcolor="#333333" width="fill" />
+                    <Label align="center_bottom" font="24" id="infoSubLabel1" textcolor="#999999" width="fill" />
+                </panel>
+
+                <layout style="verticalSpaceLine" margin="26,0,26,0" />
+
+                <panel height="fill" id="info2" margin="26,0,26,0" padding="0,10,0,10" width="fill">
+                    <Label align="center_top" font="28" id="infoLabel2" textcolor="#333333" width="fill" />
+                    <Label align="center_bottom" font="24" id="infoSubLabel2" textcolor="#999999" width="fill" />
+                </panel>
+            </layout>
+
+            <!-- 驾车专题布局 -->
+            <panel height="wrap" id="special" margin="0,24,0,24" width="fill">
+                <image default_image="default_special_bg.png" height="w*0.31" id="specialImage" margin="3,0,0,0" width="fill" />
+
+                <layout bgimage="driver_special_bg.png" height="51" width="wrap">
+                    <label align="center" font="26" height="fill" id="specialTitle" padding="0,10,5,15" textcolor="#FFFFFF"
+                        width="wrap" />
+                </layout>
+
+                <label align="left_center" bgcolor="#0000007F" font="28" height="50" id="specialSubTitle" padding="0,10,0,10"
+                    panel_align="center_bottom" textcolor="#FFFFFF" />
+            </panel>
+
+            <!-- 快查单词布局 -->
+            <layout height="90" orientation="horizontal" width="fill">
+                <button style="quickWordsBtn" id="quickWord0" percent_width="20" />
+                <layout style="verticalSpaceLine" bgcolor="#E6E6E6" margin="30,0,30,0" />
+
+                <button style="quickWordsBtn" id="quickWord1" percent_width="20" />
+                <layout style="verticalSpaceLine" bgcolor="#E6E6E6" margin="30,0,30,0" />
+
+                <button style="quickWordsBtn" id="quickWord2" percent_width="20" />
+                <layout style="verticalSpaceLine" bgcolor="#E6E6E6" margin="30,0,30,0" />
+
+                <button style="quickWordsBtn" id="quickWord3" percent_width="20" />
+                <layout style="verticalSpaceLine" bgcolor="#E6E6E6" margin="30,0,30,0" />
+
+                <button style="quickWordsBtn" id="quickWord4" percent_width="20" />
+            </layout>
+
+            <layout style="horizontalSpaceLine" />
+
+        </layout>
+    </container>
+
+</ui>

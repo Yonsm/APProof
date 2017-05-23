@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>skin_list</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>http://aos-cdn-image.amap.com/oss/map-layer/b862cc597ee44dd0bea247c990b4b9ed.png</string>
+			<key>id</key>
+			<integer>1</integer>
+			<key>name</key>
+			<string>标准</string>
+			<key>state_id</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>http://aos-cdn-image.amap.com/oss/map-layer/7bcee8a8fbc041f9930955bb8a85b816.png</string>
+			<key>id</key>
+			<integer>2</integer>
+			<key>name</key>
+			<string>活力橙</string>
+			<key>state_id</key>
+			<real>1001</real>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>http://aos-cdn-image.amap.com/oss/map-layer/1d47469fa3054e7689568ea5a1ede71e.png</string>
+			<key>id</key>
+			<integer>3</integer>
+			<key>name</key>
+			<string>月光蓝</string>
+			<key>state_id</key>
+			<integer>1002</integer>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>http://aos-cdn-image.amap.com/oss/map-layer/49e6107779604c328641ec1c350b1c6b.png</string>
+			<key>id</key>
+			<integer>4</integer>
+			<key>name</key>
+			<string>摩卡棕</string>
+			<key>state_id</key>
+			<real>1003</real>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>http://aos-cdn-image.amap.com/oss/map-layer/a81201ef227a4780871a595db084de5d.png</string>
+			<key>id</key>
+			<integer>5</integer>
+			<key>name</key>
+			<string>浪漫粉</string>
+			<key>state_id</key>
+			<integer>1004</integer>
+		</dict>
+	</array>
+	<key>skin_md5</key>
+	<string>1111111111111111_776</string>
+	<key>version</key>
+	<string>776</string>
+</dict>
+</plist>

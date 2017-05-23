@@ -1,0 +1,57 @@
+智慧景区.获取路线数据                             : LTMSmartScenicRouteBizLogic
+智慧景区.获取景区筛选控件         : LTMSmartScenicWidgetBizLogic
+信息服务.旅游指南.网络数据获取    :  LTMAOSTouristRequest
+信息服务.银行.网络数据获取      :   LTMAOSBankRequest
+信息服务.导购指南.网络数据获取    :  LTMAOSShoppingGuideRequest
+信息服务.火车票.网络数据获取      :  LTMAOSTrainTicketRequest
+列车查询.请求数据.列车数据 : LTMTrainInfoRequestBizLogic
+
+信息服务.团购.网络数据获取  :   LTMAOSGroupBuyingRequest
+信息服务.团购券.网络数据获取     :   LTMAOSKaquanRequest
+信息服务.景点门票.网络数据获取     :   LTMAOSScenicSpotOrderRequest
+信息服务.酒店订单.网络数据获取    :   LTMAOSHotelOrderRequest
+信息服务.餐厅订座.网络数据获取    :   LTMAOSRestaurantOrderRequest
+信息服务.景点.景点首页网络数据获取                   :  LTMAOSSpotHomeRequest
+信息服务.景点.景点Banner网络数据获取                :  LTMAOSSpotBannerRequest
+信息服务.景点.景点推荐列表网络数据获取                :  LTMAOSSpotRecommandListRequest
+信息服务.景点.景点门票列表网络数据获取                : LTMAOSSpotHomeTicketListRequest
+
+信息服务.电影.网络数据获取     :   LTMAOSMovieRequest
+信息服务.电影详情.网络数据获取     :   LTMAOSMovieDetailRequest
+
+信息服务.闪屏.实时上传            :  LTMAOSFlashStatisticalRequest
+信息服务.闪屏.阿里妈妈            :   LTMAOSFlashScreenCommercialRequest
+
+信息服务.美食.网络数据获取     :   LTMAOSFoodChannelRequest
+信息服务.美食频道列表.网络数据获取     :   LTMAOSFoodChannelListRequest
+
+信息服务.时景逆地理.网络数据获取   :   LTMAOSPLGeoRequest
+信息服务.时景搜索词.网络数据获取   :   LTMAOSPLPoiRequest
+信息服务.时景图片信息.网络数据获取  :   LTMAOSLocationShootingModifyPhotoInfoRequest
+信息服务.时景图片上传.网络数据获取   :   LTMAOSLocationShootingSubmitRequest
+信息服务.实景.实景Poi点网络数据获取    :   LTMAOSLocationShootingPoiRequest
+信息服务.实景.实景图片详情网路数据获取  :   LTMAOSLocationShootingPhotoDetailRequest
+信息服务.实景.用户页面获取用户图片列表  :   LTMAOSLocationShootingUserImgsRequest
+信息服务.实景.用户图片删除网络请求     :   LTMAOSLocationShootingDeletePhotoRequest
+信息服务.实景.用户页面获取用户信息数据  :   LTMAOSLocationShootingUserInfoRequest
+信息服务.实景.用户图片取消点赞网络请求  :   LTMAOSLocationShootingUnLikePhotoRequest
+信息服务.实景.用户图片点赞网络请求     :   LTMAOSLocationShootingLikePhotoRequest
+信息服务.实景.用户图片标签列表网络数据  :   LTMAOSLocationShootingTagRequest
+
+信息服务.主图卡片.配置数据获取    :  LTMAOSHeadlinesInitRequest
+信息服务.主图卡片.展示数据获取    :  LTMAOSHeadlinesContentRequest
+信息服务.照片.照片信息修改  : LTMAOSLocationShootingModifyPhotoInfoRequest
+
+信息服务.附近.附近主页网络数据获取                   :  LTMAOSCollectionRequest
+信息服务.附近.附近主页更多数据获取                   :  LTMAOSMoreQuickSearchRequest
+信息服务.附近.附近Banner网络数据获取                :  LTMAOSNearbyBannerRequest
+信息服务.附近.附近分类网络数据获取                   :  LTMAOSNearbyCategoryRequest
+信息服务.附近.附近快速查询网络数据获取               :   LTMAOSNearbyQuickSearchRequest
+信息服务.H5Log.线上埋点      :  LTMAOSH5OnlineBuryRequest
+信息服务.用户管理.设备上报 : LTMAOSUserDevice
+
+信息服务.酒店.推荐列表网络数据获取            :   LTMAOSHotelCommendRequest
+信息服务.酒店.IDQ网络数据获取                :   LTMAOSHotelIDQRequest
+信息服务.酒店.RQBXY网络数据获取              :   LTMAOSHotelRQBXYRequest
+信息服务.酒店.TQUERY网络数据获取             :   LTMAOSHotelTQUERYRequest
+信息服务.酒店.Base网络数据获取               :   LTMAOSHotelBaseRequest

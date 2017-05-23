@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenShowTrafficBtn</key>
+	<string>custom</string>
+	<key>forbiddenShowMainLayer</key>
+	<string>custom</string>
+	<key>needResumePrevManager</key>
+	<string>custom</string>
+	<key>shouldShowTraffic</key>
+	<string>false</string>
+	<key>forbiddenTopViewShown</key>
+	<string>true</string>
+	<key>forbiddenBottomViewShown</key>
+	<string>true</string>
+</dict>
+</plist>

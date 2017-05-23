@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>全部</string>
+		<key>type</key>
+		<string>ALL</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>G-高铁</string>
+		<key>type</key>
+		<string>G</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>C-城际</string>
+		<key>type</key>
+		<string>C</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>D-动车</string>
+		<key>type</key>
+		<string>D</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Z-直达</string>
+		<key>type</key>
+		<string>Z</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>T-特快</string>
+		<key>type</key>
+		<string>T</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>K-快速</string>
+		<key>type</key>
+		<string>K</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>其他</string>
+		<key>type</key>
+		<string>OTHER</string>
+	</dict>
+</array>
+</plist>

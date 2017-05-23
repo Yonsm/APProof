@@ -1,0 +1,7 @@
+{
+  "name": "life_nearby_drive",
+  "style_ver": "1",
+  "request_ver": "2",
+  "url": "api/dyui/drive/nearby",
+  "preload": "true"
+}

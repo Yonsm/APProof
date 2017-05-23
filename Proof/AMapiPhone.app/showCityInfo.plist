@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>基础功能包</key>
+	<string>000$4$221015799$101716492$</string>
+	<key>安徽省</key>
+	<string>0551pro$7$221615273$109138925$</string>
+	<key>福建省</key>
+	<string>0591pro$7$222028556$113936205$</string>
+	<key>甘肃省</key>
+	<string>0931pro$6$210056064$103262919$</string>
+	<key>广东省</key>
+	<string>020pro$7$218767239$116262780$</string>
+	<key>广西</key>
+	<string>0771pro$7$215772018$116000253$</string>
+	<key>贵州省</key>
+	<string>0851pro$7$213799090$113380840$</string>
+	<key>海南省</key>
+	<string>0898pro$9$216036581$119646294$</string>
+	<key>河北省</key>
+	<string>0311pro$7$220942115$102266285$</string>
+	<key>黑龙江</key>
+	<string>0451pro$6$229436030$93663324$</string>
+	<key>河南省</key>
+	<string>0371pro$7$219071260$107168979$</string>
+	<key>湖北省</key>
+	<string>027pro$7$217883136$109853440$</string>
+	<key>湖南省</key>
+	<string>0731pro$7$217570497$112864431$</string>
+	<key>江苏省</key>
+	<string>025pro$7$223448866$107945219$</string>
+	<key>江西省</key>
+	<string>0791pro$7$220608606$113004238$</string>
+	<key>吉林省</key>
+	<string>0431pro$6$228362342$97952429$</string>
+	<key>辽宁省</key>
+	<string>024pro$7$225466686$99835036$</string>
+	<key>内蒙古</key>
+	<string>0471pro$5$218435788$97316530$</string>
+	<key>宁夏</key>
+	<string>0951pro$8$213369680$104196144$</string>
+	<key>青海省</key>
+	<string>0971pro$6$206095510$105964607$</string>
+	<key>陕西省</key>
+	<string>029pro$7$215643682$105814795$</string>
+	<key>山东省</key>
+	<string>0531pro$7$222787050$105342249$</string>
+	<key>山西省</key>
+	<string>0351pro$7$218140530$103678418$</string>
+	<key>四川省</key>
+	<string>028pro$6$211405160$110065418$</string>
+	<key>新疆</key>
+	<string>0991pro$5$197813546$100837476$</string>
+	<key>西藏</key>
+	<string>0891pro$5$201679304$110451926$</string>
+	<key>云南省</key>
+	<string>0871pro$7$209922543$114917590$</string>
+	<key>浙江省</key>
+	<string>0571pro$8$223679654$111349828$</string>
+</dict>
+</plist>

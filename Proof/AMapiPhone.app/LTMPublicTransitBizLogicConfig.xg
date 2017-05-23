@@ -1,0 +1,28 @@
+实时公交.到站查询 : LTMAOSRealtimeBusStationHttpRequest
+实时公交.停靠站查询 : LTMRealtimeAllBusExRequestBizLoic
+实时公交.订阅推送 : AMAOSRealtimeBusSubscribeRequest
+实时公交.取消全部订阅 : AMAOSRealtimeCleanAllSubscribeRequest
+
+公交线路搜索.查询线路.获取线路数据 : LTMBuslineSearchBizLogic
+公交线路搜索.分享路线 : LTMBuslineShareBizLogic
+
+步行导航.天气信息 : LTMWeatherInfoRequest
+步行导航.导航评分 : LTMFootNaviRankBizLogic
+骑行导航.导航评分 : LTMRideNaviRankBizLogic
+步行导航.路线重新规划 : LTMFootNaviReRouteRequest
+步行.请求.路线查询 : LTMFootPathRequest
+骑行.请求.路线查询 : LTMRidePathRequest
+骑行导航.路线重新规划 : LTMRideNaviReRouteRequest
+公交规划.公交导航.步行导航结束上报 : LTMPublictransitAchievementCallbackBizLogic
+公交规划.公交导航.切换备选线路 : AMAOSBusAlterRequest
+地图基础服务.网络导航.步导轨迹回传 : LTMAOSTrackFeedbackHttpRequest
+出行.查询.公交结果.公交 : LTMAOSBusCityHttpRequest
+公交线路搜索.火车购票 : LTMTrainTicketBizLogic
+UGC.步行导航方案.评论 : LTMAOSWalkCreateRequest
+UGC.公交导航方案.评论 : LTMAOSBusPlanCreateRequest
+火车.车站数据: LTMTrainCityBizLogic
+长途汽车.列表数据 : LTMCoachTicketsRequest
+客车.到达站点查询 : LTMArriveCoachStationRequest
+汽车票.汽车票订单列表查询: LTMCoachTicketOrderListBizlogic
+汽车票.余票校验 : LTMCoachTicketsValidRequest
+汽车票.下单跳转 : LTMCoachTicketSubmitRequest

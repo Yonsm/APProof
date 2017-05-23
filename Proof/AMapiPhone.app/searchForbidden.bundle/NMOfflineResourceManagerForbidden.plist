@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenGPSClicked</key>
+	<string>true</string>
+	<key>forbiddenInteractionPointClicked</key>
+	<string>false</string>
+	<key>forbiddenLayerPointHighlight</key>
+	<string>false</string>
+	<key>forbiddenMapLongPressed</key>
+	<string>false</string>
+	<key>forbiddenMapPointClicked</key>
+	<string>false</string>
+	<key>forbiddenMessageBoxButton</key>
+	<string>last</string>
+	<key>forbiddenSmartScenic</key>
+	<string>last</string>
+	<key>forbiddenShowLocationShootingBtn</key>
+	<string>false</string>
+	<key>forbiddenShowMapFeedBackBtn</key>
+	<string>false</string>
+</dict>
+</plist>

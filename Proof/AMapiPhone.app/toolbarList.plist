@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bottom</key>
+	<array>
+		<dict>
+			<key>isFirst</key>
+			<true/>
+			<key>icon</key>
+			<string>main_bottom_around</string>
+			<key>title</key>
+			<string>附近</string>
+			<key>hasBadge</key>
+			<false/>
+			<key>managerName</key>
+			<string>Nearby</string>
+		</dict>
+		<dict>
+			<key>isFirst</key>
+			<false/>
+			<key>icon</key>
+			<string>main_bottom_route</string>
+			<key>title</key>
+			<string>路线</string>
+			<key>hasBadge</key>
+			<false/>
+			<key>managerName</key>
+			<string>PathSearch</string>
+		</dict>
+		<dict>
+			<key>isFirst</key>
+			<false/>
+			<key>icon</key>
+			<string>main_bottom_mine</string>
+			<key>title</key>
+			<string>我的</string>
+			<key>hasBadge</key>
+			<false/>
+			<key>managerName</key>
+			<string>Mine</string>
+		</dict>
+	</array>
+</dict>
+</plist>

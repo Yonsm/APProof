@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>forbiddenShowCityScenicSwitchBtn</key>
+	<string>true</string>
+	<key>forbiddenShowCompass</key>
+	<string>true</string>
+	<key>forbiddenShowFavorLayer</key>
+	<string>true</string>
+	<key>forbiddenShowLayersBtn</key>
+	<string>true</string>
+	<key>forbiddenShowMainLayer</key>
+	<string>true</string>
+	<key>forbiddenShowMainLayerFavor</key>
+	<string>true</string>
+	<key>forbiddenShowMapFeedBackBtn</key>
+	<string>true</string>
+	<key>forbiddenShowTrafficBtn</key>
+	<string>true</string>
+	<key>shouldShowTraffic</key>
+	<string>false</string>
+</dict>
+</plist>
