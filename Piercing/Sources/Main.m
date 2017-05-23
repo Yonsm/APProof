@@ -22,9 +22,10 @@ void * my_dlsym(void * __handle, const char * __symbol)
 }
 
 //
-__attribute__((constructor)) void init()
+__attribute__((constructor)) int main()
 {
 	_LogLine();
 	orig_dlsym = dlsym(RTLD_DEFAULT, "dlsym");
 	rebind_symbols((struct rebinding[1]){{"dlsym", my_dlsym}}, 1);
+	return 0;
 }
