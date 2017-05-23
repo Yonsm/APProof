@@ -3,8 +3,13 @@
 #import "HookUtil.h"
 
 //
-void _HookFunction(const char *lib, const char *fun, void *hook, void **old)
+void _HookFunction(NSString *processNames, const char *lib, const char *fun, void *hook, void **old)
 {
+	if (processNames && ![[processNames componentsSeparatedByString:@"|"] containsObject:NSProcessInfo.processInfo.processName])
+	{
+		return;
+	}
+		
 	void *symbol = dlsym(dlopen(lib, RTLD_LAZY), fun);
 
 	//
@@ -26,8 +31,13 @@ void _HookFunction(const char *lib, const char *fun, void *hook, void **old)
 }
 
 //
-void _HookMessage(Class cls, const char *msg, void *hook, void **old)
+void _HookMessage(NSString *processNames, Class cls, const char *msg, void *hook, void **old)
 {
+	if (processNames && ![[processNames componentsSeparatedByString:@"|"] containsObject:NSProcessInfo.processInfo.processName])
+	{
+		return;
+	}
+
 	//
 	char name[1024];
 	
@@ -39,20 +49,35 @@ void _HookMessage(Class cls, const char *msg, void *hook, void **old)
 	while (*msg++);
 	SEL sel = sel_registerName(name);
 
+#ifdef _Support_CydiaSubstrate
 	//
 	static void (*_MSHookMessageEx)(Class cls, SEL sel, void *hook, void **old) = NULL;
 	if (_MSHookMessageEx == nil)
 	{
 		_MSHookMessageEx = dlsym(dlopen("/Library/Frameworks/CydiaSubstrate.framework/CydiaSubstrate", RTLD_LAZY), "MSHookMessageEx");
+		_Log(@"HttPeek: _MSHookMessageEx = %p", _MSHookMessageEx);
+		if (_MSHookMessageEx == NULL)
+		{
+			_MSHookMessageEx = (void *)-1;
+		}
 	}
 
 	//
-	if (_MSHookMessageEx)
+	if (_MSHookMessageEx && (_MSHookMessageEx != (void *)-1))
 	{
 		_MSHookMessageEx(cls, sel, hook, old);
 	}
 	else
+#endif
 	{
-		*old = method_setImplementation(class_getInstanceMethod(cls, sel), hook);
+		Method method = class_getInstanceMethod(cls, sel);
+		if (method == NULL)
+		{
+			_Log(@"HttPeek: HookMessage Could not find [%@ %s]", cls, name);
+		}
+		else
+		{
+			*old = method_setImplementation(method, hook);
+		}
 	}
 }

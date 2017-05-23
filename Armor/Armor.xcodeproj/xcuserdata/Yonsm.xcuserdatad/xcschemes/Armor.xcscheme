@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "246BEA431ED4228900AE0402"
-               BuildableName = "Armor.app"
-               BlueprintName = "Armor"
+               BuildableName = "AMapiPhone.app"
+               BlueprintName = "AMapiPhone"
                ReferencedContainer = "container:Armor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "246BEA431ED4228900AE0402"
-            BuildableName = "Armor.app"
-            BlueprintName = "Armor"
+            BuildableName = "AMapiPhone.app"
+            BlueprintName = "AMapiPhone"
             ReferencedContainer = "container:Armor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "246BEA431ED4228900AE0402"
-            BuildableName = "Armor.app"
-            BlueprintName = "Armor"
+            BuildableName = "AMapiPhone.app"
+            BlueprintName = "AMapiPhone"
             ReferencedContainer = "container:Armor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "246BEA431ED4228900AE0402"
-            BuildableName = "Armor.app"
-            BlueprintName = "Armor"
+            BuildableName = "AMapiPhone.app"
+            BlueprintName = "AMapiPhone"
             ReferencedContainer = "container:Armor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
