@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		246BEA881ED4276500AE0402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA851ED4276500AE0402 /* main.m */; };
+		246BEA881ED4276500AE0402 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA851ED4276500AE0402 /* Main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		246BEA441ED4228900AE0402 /* Armor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		246BEA851ED4276500AE0402 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		246BEA851ED4276500AE0402 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		246BEA871ED4276500AE0402 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 		246BEA841ED4276500AE0402 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				246BEA851ED4276500AE0402 /* main.m */,
+				246BEA851ED4276500AE0402 /* Main.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246BEA881ED4276500AE0402 /* main.m in Sources */,
+				246BEA881ED4276500AE0402 /* Main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
