@@ -1,6 +1,8 @@
 
 #import <objc/runtime.h>
 
+//#define _Support_CydiaSubstrate
+
 #ifndef _Log
 #if defined(DEBUG) || defined(TEST)
 #define _Log(s, ...)	NSLog(s, ##__VA_ARGS__)
@@ -17,6 +19,12 @@
 extern "C"
 {
 #endif
+
+#ifdef _Support_CydiaSubstrate
+	bool MSHookFunction(void *symbol, void *hook, void **old);	// Return false if no Cydia Substrate
+	bool MSHookMessage(Class cls, SEL sel, IMP hook, IMP *old);	// Return false if no Cydia Substrate
+#endif
+	
 	void HUHookFunction(const char *lib, const char *func, void *hook, void **old);
 	void HUHookMessage(Class cls, const char *name, IMP hook, IMP *old);
 	
