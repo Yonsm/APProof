@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		246BEA441ED4228900AE0402 /* AMapiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246BEA441ED4228900AE0402 /* QQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BEA851ED4276500AE0402 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		246BEA871ED4276500AE0402 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246BEA8A1ED427F800AE0402 /* Proof */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Proof; path = ../Proof; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		246BEA451ED4228900AE0402 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				246BEA441ED4228900AE0402 /* AMapiPhone.app */,
+				246BEA441ED4228900AE0402 /* QQMusic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		246BEA431ED4228900AE0402 /* AMapiPhone */ = {
+		246BEA431ED4228900AE0402 /* QQMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 246BEA5B1ED4228900AE0402 /* Build configuration list for PBXNativeTarget "AMapiPhone" */;
+			buildConfigurationList = 246BEA5B1ED4228900AE0402 /* Build configuration list for PBXNativeTarget "QQMusic" */;
 			buildPhases = (
 				246BEA401ED4228900AE0402 /* Sources */,
 				246BEA411ED4228900AE0402 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = AMapiPhone;
+			name = QQMusic;
 			productName = Armor;
-			productReference = 246BEA441ED4228900AE0402 /* AMapiPhone.app */;
+			productReference = 246BEA441ED4228900AE0402 /* QQMusic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				246BEA431ED4228900AE0402 /* AMapiPhone */,
+				246BEA431ED4228900AE0402 /* QQMusic */,
 			);
 		};
 /* End PBXProject section */
@@ -166,7 +166,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Check payload\nif [ -z \"$(ls -d \"$SRCROOT\"/../Proof/*.app)\" ]; then\n\techo \"Proof payload is empty.\";\n\texit 1;\nfi\n\n# Fake application\nrm -rf \"$CODESIGNING_FOLDER_PATH\";\ncp -av \"$SRCROOT/../Proof/$FULL_PRODUCT_NAME\" \"$CODESIGNING_FOLDER_PATH\";\nrm -f $CODESIGNING_FOLDER_PATH/embedded.mobileprovision;\nchmod +x $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME\n\n# Inject dylib\n$SRCROOT/../Scripts/optool install -t $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME -p \"@executable_path/Frameworks/Piercing.framework/Piercing\"";
+			shellScript = "# Check payload\nif [ -z \"$(ls -d \"$SRCROOT\"/../Proof/*.app)\" ]; then\n\techo \"Proof payload is empty.\";\n\texit 1;\nfi\nexit 0\n\n# Fake application\nrm -rf \"$CODESIGNING_FOLDER_PATH\";\ncp -av \"$SRCROOT/../Proof/$FULL_PRODUCT_NAME\" \"$CODESIGNING_FOLDER_PATH\";\nrm -f $CODESIGNING_FOLDER_PATH/embedded.mobileprovision;\nchmod +x $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME\n\n# Inject dylib\n$SRCROOT/../Scripts/optool install -t $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME -p \"@executable_path/Frameworks/Piercing.framework/Piercing\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -308,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		246BEA5B1ED4228900AE0402 /* Build configuration list for PBXNativeTarget "AMapiPhone" */ = {
+		246BEA5B1ED4228900AE0402 /* Build configuration list for PBXNativeTarget "QQMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				246BEA5C1ED4228900AE0402 /* Debug */,

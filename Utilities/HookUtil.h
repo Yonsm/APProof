@@ -1,6 +1,29 @@
 
 #import <objc/runtime.h>
 
+#ifndef _Log
+#if defined(DEBUG) || defined(TEST)
+#define _Log(s, ...)	NSLog(s, ##__VA_ARGS__)
+#else
+#define _Log(s, ...)	((void) 0)
+#endif
+#endif
+
+//
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+void HUHookFunction(void *symbol, void *hook, void **old);
+void HUHookMessage(Class cls, SEL sel, IMP hook, IMP *old);
+	
+	
+#ifdef __cplusplus
+}
+#endif
+
+
 //
 #define _HOOK_FUNCTION_(MOD, PROC, RET, LIB, FUN, ...)		RET $##FUN(__VA_ARGS__);\
 															RET (*_##FUN)(__VA_ARGS__);\
@@ -28,13 +51,7 @@
 #define HOOK_META_FOR_PROCESS(RROC, RET, CLS, MSG, ...)		_HOOK_MESSAGE_(constructor, RROC, RET, CLS, MSG, Meta, ##__VA_ARGS__)
 
 //
-#ifdef __cplusplus
-extern "C"
-#endif
 void _HookFunction(NSString *processNames, const char *lib, const char *fun, void *hook, void **old);
 
 //
-#ifdef __cplusplus
-extern "C"
-#endif
 void _HookMessage(NSString *processNames, Class cls, const char *msg, void *hook, void **old);
