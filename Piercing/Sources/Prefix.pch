@@ -9,5 +9,6 @@
 
 #ifdef __OBJC__
 #import "NSUtil.h"
-#import "HookUtil.h"
 #endif
+
+#import "HookUtil.h"
