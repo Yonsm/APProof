@@ -68,6 +68,6 @@ extern "C"
 
 // Automatic hook for special process name
 // Use | separator for multiple process name
-#define HOOK_FUNCTION_FOR_PROCESS(RROC, RET, LIB, FUN, ...)	__HOOK_FUNCTION(constructor, HUHookFunctionForProcess, PROC, RET, LIB, FUN, ##__VA_ARGS__)
-#define HOOK_MESSAGE_FOR_PROCESS(RROC, RET, CLS, MSG, ...)	__HOOK_MESSAGE(constructor, HUHookMessageForProcess, RROC, RET, CLS, MSG, , ##__VA_ARGS__)
-#define HOOK_META_FOR_PROCESS(RROC, RET, CLS, MSG, ...)		__HOOK_MESSAGE(constructor, HUHookMessageForProcess, RROC, RET, CLS, MSG, Meta, ##__VA_ARGS__)
+#define HOOK_FUNCTION_FOR_PROCESS(PROC, RET, LIB, FUN, ...)	__HOOK_FUNCTION(constructor, HUHookFunctionForProcess, PROC, RET, LIB, FUN, ##__VA_ARGS__)
+#define HOOK_MESSAGE_FOR_PROCESS(PROC, RET, CLS, MSG, ...)	__HOOK_MESSAGE(constructor, HUHookMessageForProcess, PROC, RET, CLS, MSG, , ##__VA_ARGS__)
+#define HOOK_META_FOR_PROCESS(PROC, RET, CLS, MSG, ...)		__HOOK_MESSAGE(constructor, HUHookMessageForProcess, PROC, RET, CLS, MSG, Meta, ##__VA_ARGS__)
