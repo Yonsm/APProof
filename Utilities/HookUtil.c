@@ -323,18 +323,18 @@ bool HUIsAnyOneMatched(const char *any, const char *one, char separator)
 			{
 				return false;
 			}
-			else if (*any == '|')
+			else if (*any == separator)
 			{
 				p = one;
 				continue;
 			}
 		}
-		else if (*any == 0 || *any == '|')
+		else if (*any == 0 || *any == separator)
 		{
 			return true;
 		}
 		
-		for (; *any != '|'; any++)
+		for (; *any != separator; any++)
 		{
 			if (*any == 0)
 			{
