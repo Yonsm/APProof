@@ -1,43 +1,30 @@
 
 //
-#import <objc/runtime.h>
-#import <dlfcn.h>
-#import "fishhook.h"
 #import "HookUtil.h"
 
 //
-static void * (*orig_dlsym)(void *, const char *);
-int my_ptrace(int _request, pid_t _pid, caddr_t _addr, int _data)
+int $ptrace(int request, pid_t pid, caddr_t addr, int data)
+//_HOOK_FUNCTION(int, /usr/lib/libSystem.B.dylib, ptrace, int request, pid_t pid, caddr_t addr, int data)
 {
 	return 0;
 }
 
 //
-void * my_dlsym(void * __handle, const char * __symbol)
+_HOOK_FUNCTION(void *, /usr/lib/libSystem.B.dylib, dlsym, void *handle, const char *symbol)
 {
-	if (strcmp(__symbol, "ptrace") == 0) {
-		return (void *)&my_ptrace;
+	if (strcmp(symbol, "ptrace") == 0)
+	{
+		_LogLine();
+		return (void *)&$ptrace;
 	}
-	
-	return orig_dlsym(__handle, __symbol);
+
+	return _dlsym(handle, symbol);
 }
 
 //
 __attribute__((constructor)) int main()
 {
 	_LogLine();
-	orig_dlsym = dlsym(RTLD_DEFAULT, "dlsym");
-	rebind_symbols((struct rebinding[1]){{"dlsym", my_dlsym}}, 1);
-	return 0;
-}
-
-
-HOOK_FUNCTION(int, SystemB, open2, char *p)
-{
-	return 0;
-}
-
-HOOK_FUNCTION_FOR_PROCESS(ddd, int, SystemB, open3, char *p)
-{
+	_Init_dlsym();
 	return 0;
 }
