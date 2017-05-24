@@ -1,7 +1,0 @@
-{
-	"name":"life_nearby_food",
-	"style_ver":"1",
-	"request_ver":"1",
-	"url":"ws/transfer/auth/dyui/food/nearby",
-	"preload":"true"
-}

@@ -2,7 +2,7 @@
 #import <stdlib.h>
 #import "HookUtil.h"
 
-// Fishhook from FaceBook
+// Rewrite fishhook from FaceBook
 #import <string.h>
 #import <mach-o/dyld.h>
 #import <mach-o/nlist.h>

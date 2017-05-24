@@ -1,7 +1,0 @@
-{
-  "name": "life_nearby_bank",
-  "style_ver": "1",
-  "request_ver": "1",
-  "url": "ws/transfer/auth/dyui/bank/nearby",
-  "preload": "true"
-}
