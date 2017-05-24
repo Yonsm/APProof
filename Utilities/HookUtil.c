@@ -2,7 +2,11 @@
 #import <stdlib.h>
 #import <dlfcn.h>
 #import "HookUtil.h"
-#define _Support_CydiaSubstrate
+//#define _Support_CydiaSubstrate
+
+//#import <Foundation/Foundation.h>
+
+#import "FishHook.h"
 
 //
 void HUHookFunction(void *symbol, void *hook, void **old)
@@ -25,12 +29,14 @@ void HUHookFunction(void *symbol, void *hook, void **old)
 		return _MSHookFunction(symbol, hook, old);
 	}
 #endif
-	
+
+	//*old = dlsym(RTLD_DEFAULT, "dlsym");
+	rebind_symbols((struct rebinding[1]){{"dlsym", hook}}, 1);
 	*old = NULL;
 }
 
 //
-void HUHookMessage(Class cls, SEL sel, IMP hook, IMP *old)
+ void HUHookMessage(Class cls, SEL sel, IMP hook, IMP *old)
 {
 #ifdef _Support_CydiaSubstrate
 	static void (*_MSHookMessageEx)(Class cls, SEL sel, IMP hook, IMP *old) = NULL;
@@ -66,8 +72,12 @@ void HUHookMessage(Class cls, SEL sel, IMP hook, IMP *old)
 //
 void HUHookFunctionForDylib(const char *lib, const char *func, void *hook, void **old)
 {
+#ifdef _Support_CydiaSubstrate
 	void *symbol = dlsym(dlopen(lib, RTLD_LAZY), func);
 	HUHookFunction(symbol, hook, old);
+#else
+	rebind_symbols((struct rebinding[1]){{func, hook, old}}, 1);
+#endif
 }
 
 //
@@ -81,7 +91,7 @@ void HUHookMessageWithName(Class cls, const char *name, IMP hook, IMP *old)
 	while (*name++);
 	SEL sel = sel_registerName(msg);
 	
-	HUHookMessage(cls, sel, hook, (IMP *)old);
+	HUHookMessage(cls, sel, hook, old);
 }
 
 
