@@ -28,8 +28,8 @@ extern "C"
 #endif
 
 //
-#define __HUHookFunction(NOUSE, ...)				HUHookFunction(__VA_ARGS__)
-#define __HUHookMessage(NOUSE, ...)					HUHookMessage(__VA_ARGS__)
+#define __HUHookFunction(NOUSE, ...)						HUHookFunction(__VA_ARGS__)
+#define __HUHookMessage(NOUSE, ...)							HUHookMessage(__VA_ARGS__)
 
 #define __HOOK_FUNCTION(MOD, HKFN, PROC, RET, LIB, FUNC, ...) RET $##FUNC(__VA_ARGS__);\
 															RET (*_##FUNC)(__VA_ARGS__);\
