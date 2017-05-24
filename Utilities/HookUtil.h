@@ -26,7 +26,7 @@ extern "C"
 #endif
 	
 	void HUHookFunction(const char *lib, const char *func, void *hook, void **old);
-	void HUHookMessage(Class cls, const char *name, IMP hook, IMP *old);
+	void HUHookMessage(Class cls, const char *name, IMP hook, IMP *old);	// Name means ObjC message, use '_' for ':', '__' for '_'
 	
 	bool HUIsAnyOneMatched(const char *any, const char *one, char separator);
 	void HUHookFunctionForProcess(const char *proc, const char *lib, const char *func, void *hook, void **old);
