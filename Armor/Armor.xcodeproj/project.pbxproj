@@ -166,7 +166,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Check payload\nif [ -z \"$(ls -d \"$SRCROOT\"/../Proof/*.app)\" ]; then\n\techo \"Proof payload is empty.\";\n\texit 1;\nfi\n\n# Fake application\n#rm -rf \"$CODESIGNING_FOLDER_PATH\";\n#cp -av \"$SRCROOT/../Proof/$FULL_PRODUCT_NAME\" \"$CODESIGNING_FOLDER_PATH\";\n#rm -f $CODESIGNING_FOLDER_PATH/embedded.mobileprovision;\n#chmod +x $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME\n\n# Inject dylib\n$SRCROOT/../Scripts/optool install -t $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME -p \"@executable_path/Frameworks/Piercing.framework/Piercing\"";
+			shellScript = "# Check payload\nif [ -z \"$(ls -d \"$SRCROOT\"/../Proof/*.app)\" ]; then\n\techo \"Proof payload is empty.\";\n\texit 1;\nfi\n\n# Fake application\nrm -rf \"$CODESIGNING_FOLDER_PATH\";\ncp -av \"$SRCROOT/../Proof/$FULL_PRODUCT_NAME\" \"$CODESIGNING_FOLDER_PATH\";\nrm -f $CODESIGNING_FOLDER_PATH/embedded.mobileprovision;\nchmod +x $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME\n\n# Inject dylib\n$SRCROOT/../Scripts/optool install -t $CODESIGNING_FOLDER_PATH/$EXECUTABLE_NAME -p \"@executable_path/Frameworks/Piercing.framework/Piercing\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
