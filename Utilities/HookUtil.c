@@ -1,7 +1,7 @@
 
+#import <stdlib.h>
 #import <dlfcn.h>
 #import "HookUtil.h"
-
 #define _Support_CydiaSubstrate
 
 //
@@ -62,36 +62,81 @@ void HUHookMessage(Class cls, SEL sel, IMP hook, IMP *old)
 	}
 }
 
+
 //
-void _HookFunction(NSString *processNames, const char *lib, const char *fun, void *hook, void **old)
+void HUHookFunctionForDylib(const char *lib, const char *func, void *hook, void **old)
 {
-	if (processNames && ![[processNames componentsSeparatedByString:@"|"] containsObject:NSProcessInfo.processInfo.processName])
-	{
-		return;
-	}
-	
-	void *symbol = dlsym(dlopen(lib, RTLD_LAZY), fun);
-	return HUHookFunction(symbol, hook, old);
+	void *symbol = dlsym(dlopen(lib, RTLD_LAZY), func);
+	HUHookFunction(symbol, hook, old);
 }
 
 //
-void _HookMessage(NSString *processNames, Class cls, const char *msg, void *hook, void **old)
+void HUHookMessageWithName(Class cls, const char *name, IMP hook, IMP *old)
 {
-	if (processNames && ![[processNames componentsSeparatedByString:@"|"] containsObject:NSProcessInfo.processInfo.processName])
-	{
-		return;
-	}
-	
-	//
-	char name[1024];
-	
-	char *p = name;
+	char msg[1024], *p = msg;
 	do
 	{
-		*p++ = (*msg == '_') ? ((msg[1] == '_') ? *msg++ : ':') : *msg;
+		*p++ = (*name == '_') ? ((name[1] == '_') ? *name++ : ':') : *name;
 	}
-	while (*msg++);
-	SEL sel = sel_registerName(name);
+	while (*name++);
+	SEL sel = sel_registerName(msg);
 	
-	return HUHookMessage(cls, sel, hook, (IMP *)old);
+	HUHookMessage(cls, sel, hook, (IMP *)old);
+}
+
+
+//
+bool HUIsAnyOneMatched(const char *any, const char *one, char separator)
+{
+	for (const char *p = one; true; any++)
+	{
+		if (*p)
+		{
+			if (*any == *p)
+			{
+				p++;
+				continue;
+			}
+			else if (*any == 0)
+			{
+				return false;
+			}
+			else if (*any == '|')
+			{
+				p = one;
+				continue;
+			}
+		}
+		else if (*any == 0 || *any == '|')
+		{
+			return true;
+		}
+		
+		for (; *any != '|'; any++)
+		{
+			if (*any == 0)
+			{
+				return false;
+			}
+		}
+		p = one;
+	}
+}
+
+//
+void HUHookFunctionForProcess(const char *proc, const char *lib, const char *func, void *hook, void **old)
+{
+	if (HUIsAnyOneMatched(proc, getprogname(), '|'))
+	{
+		HUHookFunctionForDylib(lib, func, hook, old);
+	}
+}
+
+//
+void HUHookMessageForProcess(const char *proc, Class cls, const char *name, IMP hook, IMP *old)
+{
+	if (HUIsAnyOneMatched(proc, getprogname(), '|'))
+	{
+		HUHookMessageWithName(cls, name, hook, old);
+	}
 }

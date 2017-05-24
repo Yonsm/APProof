@@ -10,7 +10,7 @@
 		246BEA761ED423F300AE0402 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA741ED423F300AE0402 /* Main.m */; };
 		246BEA771ED423F300AE0402 /* Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA751ED423F300AE0402 /* Prefix.pch */; };
 		246BEA801ED4267C00AE0402 /* HookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7C1ED4267C00AE0402 /* HookUtil.h */; };
-		246BEA811ED4267C00AE0402 /* HookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA7D1ED4267C00AE0402 /* HookUtil.m */; };
+		246BEA811ED4267C00AE0402 /* HookUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA7D1ED4267C00AE0402 /* HookUtil.c */; };
 		246BEA821ED4267C00AE0402 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7E1ED4267C00AE0402 /* Macro.h */; };
 		246BEA831ED4267C00AE0402 /* NSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7F1ED4267C00AE0402 /* NSUtil.h */; };
 		246BEA951ED4328100AE0402 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA931ED4328100AE0402 /* fishhook.h */; };
@@ -23,7 +23,7 @@
 		246BEA751ED423F300AE0402 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		246BEA791ED4260300AE0402 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246BEA7C1ED4267C00AE0402 /* HookUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookUtil.h; sourceTree = "<group>"; };
-		246BEA7D1ED4267C00AE0402 /* HookUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookUtil.m; sourceTree = "<group>"; };
+		246BEA7D1ED4267C00AE0402 /* HookUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HookUtil.c; sourceTree = "<group>"; };
 		246BEA7E1ED4267C00AE0402 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		246BEA7F1ED4267C00AE0402 /* NSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUtil.h; sourceTree = "<group>"; };
 		246BEA931ED4328100AE0402 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 				246BEA931ED4328100AE0402 /* fishhook.h */,
 				246BEA941ED4328100AE0402 /* fishhook.c */,
 				246BEA7C1ED4267C00AE0402 /* HookUtil.h */,
-				246BEA7D1ED4267C00AE0402 /* HookUtil.m */,
+				246BEA7D1ED4267C00AE0402 /* HookUtil.c */,
 				246BEA7E1ED4267C00AE0402 /* Macro.h */,
 				246BEA7F1ED4267C00AE0402 /* NSUtil.h */,
 			);
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246BEA811ED4267C00AE0402 /* HookUtil.m in Sources */,
+				246BEA811ED4267C00AE0402 /* HookUtil.c in Sources */,
 				246BEA961ED4328100AE0402 /* fishhook.c in Sources */,
 				246BEA761ED423F300AE0402 /* Main.m in Sources */,
 			);

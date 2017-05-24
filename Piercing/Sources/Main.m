@@ -3,6 +3,7 @@
 #import <objc/runtime.h>
 #import <dlfcn.h>
 #import "fishhook.h"
+#import "HookUtil.h"
 
 //
 static void * (*orig_dlsym)(void *, const char *);
@@ -27,5 +28,16 @@ __attribute__((constructor)) int main()
 	_LogLine();
 	orig_dlsym = dlsym(RTLD_DEFAULT, "dlsym");
 	rebind_symbols((struct rebinding[1]){{"dlsym", my_dlsym}}, 1);
+	return 0;
+}
+
+
+HOOK_FUNCTION(int, SystemB, open2, char *p)
+{
+	return 0;
+}
+
+HOOK_FUNCTION_FOR_PROCESS(ddd, int, SystemB, open3, char *p)
+{
 	return 0;
 }
