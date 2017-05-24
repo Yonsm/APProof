@@ -52,7 +52,7 @@ extern "C"
 															RET (*_##CLS##_##MSG)(id self, SEL sel, ##__VA_ARGS__);\
 															__attribute__((MOD)) void _Init_##CLS##_##MSG()\
 															{\
-																HKFN(#PROC, objc_get##META##Class(#CLS), #MSG, (void *)$##CLS##_##MSG, (void **)&_##CLS##_##MSG);\
+																HKFN(#PROC, objc_get##META##Class(#CLS), #MSG, (IMP)$##CLS##_##MSG, (IMP *)&_##CLS##_##MSG);\
 															}\
 															RET $##CLS##_##MSG(id self, SEL sel, ##__VA_ARGS__)
 
