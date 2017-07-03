@@ -1,7 +1,0 @@
-;(function(){
-	try{
-		var event = window.document.createEvent("Events");
-		event.initEvent("QQMusicWebviewHide", true, true);
-		window.document.dispatchEvent(event);
-	}catch(e){}
-})();
