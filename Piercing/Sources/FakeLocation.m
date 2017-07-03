@@ -135,11 +135,10 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 	self = [super initWithFrame:CGRectMake(12, 120, 90, 30)];
 
 	_controller = controller;
+	self.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.7];
 	self.titleLabel.font = [UIFont systemFontOfSize:12];
 	self.clipsToBounds = YES;
 	self.layer.cornerRadius = 4;
-	[self setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-	[self setTitleColor:UIColor.redColor forState:UIControlStateHighlighted];
 	
 	[self addTarget:self action:@selector(toggle) forControlEvents:UIControlEventTouchUpInside];
 	[self updateTitle];
@@ -197,7 +196,7 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 - (void)updateTitle
 {
 	[self setTitle:_fake ? @"恢复真实位置" : @"设为模拟位置" forState:UIControlStateNormal];
-	self.backgroundColor = [UIColor colorWithWhite:_fake ? 0.3 : 0.5 alpha:0.7];
+	[self setTitleColor:_fake ? UIColor.redColor : UIColor.whiteColor forState:UIControlStateNormal];
 }
 
 @end
