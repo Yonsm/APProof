@@ -78,6 +78,11 @@ HOOK_MESSAGE(void, CLLocationManager, setDelegate_, id<CLLocationManagerDelegate
 //
 @protocol QMapView <CLLocationManagerDelegate>
 - (CLLocationManager *)locationManager;
+- (CLLocation *)userLocation;
+- (CLLocationCoordinate2D)centerCoordinate;
+- (void)pinUserLocation:(id)sender;
+- (void)setUserTrackingMode:(int)mode animated:(BOOL)animated;
+- (BOOL)chinaContainsCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 @protocol POIInfo <NSObject>
@@ -104,7 +109,6 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 	UIButton *button = [[FakeLocationButton alloc] initWithController:self];
 	[[self view] addSubview:button];
 }
-
 
 //
 @implementation FakeLocationButton
@@ -134,7 +138,7 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 	[self addTarget:self action:@selector(toggle) forControlEvents:UIControlEventTouchUpInside];
 	
 	self.titleLabel.font = [UIFont systemFontOfSize:12];
-	self.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.7];
+	self.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.7];
 	self.clipsToBounds = YES;
 	self.layer.cornerRadius = 4;
 	
@@ -162,21 +166,26 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 		}
 		_fake = true;
 		_coordinate = info.coordinate;
+		_coordinate.latitude += 30.272741 - 30.270459;
+		_coordinate.longitude -= 120.130294 - 120.125520;
+		
+		NSLog(@"getCurrentPOIInfo: %lf,%lf", _coordinate.latitude, _coordinate.longitude);
 		[defaults setObject:[NSNumber numberWithDouble:_coordinate.latitude] forKey:@"ArmorLatitude"];
 		[defaults setObject:[NSNumber numberWithDouble:_coordinate.longitude] forKey:@"ArmorLongitude"];
 	}
 	
-	[self updateTitle];
 	for (id<QMapView> view in _controller.view.subviews)
 	{
 		if ([NSStringFromClass(view.class) isEqualToString:@"QMapView"])
 		{
 			[view.locationManager stopUpdatingLocation];
 			[view.locationManager startUpdatingLocation];
-			//[view locationManager: didUpdateToLocation:fromLocation:]
+			[view setUserTrackingMode:1 animated:YES];
 			break;
 		}
 	}
+	
+	[self updateTitle];
 }
 
 //
