@@ -3,6 +3,7 @@
 #import "HookUtil.h"
 #import <objc/runtime.h>
 #import <CoreLocation/CoreLocation.h>
+#import "TQLocationConverter.h"
 
 //
 bool _fake;
@@ -132,15 +133,16 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 - (instancetype)initWithController:(id<MMPickLocationViewController>)controller
 {
 	self = [super initWithFrame:CGRectMake(12, 120, 90, 30)];
+
 	_controller = controller;
-	
-	[self updateTitle];
-	[self addTarget:self action:@selector(toggle) forControlEvents:UIControlEventTouchUpInside];
-	
 	self.titleLabel.font = [UIFont systemFontOfSize:12];
-	self.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.7];
 	self.clipsToBounds = YES;
 	self.layer.cornerRadius = 4;
+	[self setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+	[self setTitleColor:UIColor.redColor forState:UIControlStateHighlighted];
+	
+	[self addTarget:self action:@selector(toggle) forControlEvents:UIControlEventTouchUpInside];
+	[self updateTitle];
 	
 	return self;
 }
@@ -166,10 +168,12 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 		}
 		_fake = true;
 		_coordinate = info.coordinate;
-		_coordinate.latitude += 30.272741 - 30.270459;
-		_coordinate.longitude -= 120.130294 - 120.125520;
+		if (![TQLocationConverter isLocationOutOfChina:_coordinate])
+		{
+			_coordinate = [TQLocationConverter transformFromGCJToWGS:_coordinate];
+		}
 		
-		NSLog(@"getCurrentPOIInfo: %lf,%lf", _coordinate.latitude, _coordinate.longitude);
+		//NSLog(@"getCurrentPOIInfo: %lf,%lf", _coordinate.latitude, _coordinate.longitude);
 		[defaults setObject:[NSNumber numberWithDouble:_coordinate.latitude] forKey:@"ArmorLatitude"];
 		[defaults setObject:[NSNumber numberWithDouble:_coordinate.longitude] forKey:@"ArmorLongitude"];
 	}
@@ -180,7 +184,8 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 		{
 			[view.locationManager stopUpdatingLocation];
 			[view.locationManager startUpdatingLocation];
-			[view setUserTrackingMode:1 animated:YES];
+			if (!_fake)
+				[view setUserTrackingMode:0 animated:YES];
 			break;
 		}
 	}
@@ -192,6 +197,7 @@ _HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation
 - (void)updateTitle
 {
 	[self setTitle:_fake ? @"恢复真实位置" : @"设为模拟位置" forState:UIControlStateNormal];
+	self.backgroundColor = [UIColor colorWithWhite:_fake ? 0.3 : 0.5 alpha:0.7];
 }
 
 @end

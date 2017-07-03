@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		242ACC671F0A692500A1A7C3 /* FakeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 242ACC661F0A692500A1A7C3 /* FakeLocation.m */; };
 		242ACC6A1F0A6CAA00A1A7C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242ACC691F0A6CAA00A1A7C3 /* CoreLocation.framework */; };
+		242ACC6D1F0ABC0900A1A7C3 /* TQLocationConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 242ACC6B1F0ABC0900A1A7C3 /* TQLocationConverter.h */; };
+		242ACC6E1F0ABC0900A1A7C3 /* TQLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 242ACC6C1F0ABC0900A1A7C3 /* TQLocationConverter.m */; };
 		246BEA761ED423F300AE0402 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA741ED423F300AE0402 /* Main.m */; };
 		246BEA771ED423F300AE0402 /* Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA751ED423F300AE0402 /* Prefix.pch */; };
 		246BEA801ED4267C00AE0402 /* HookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7C1ED4267C00AE0402 /* HookUtil.h */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		242ACC661F0A692500A1A7C3 /* FakeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeLocation.m; sourceTree = "<group>"; };
 		242ACC691F0A6CAA00A1A7C3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		242ACC6B1F0ABC0900A1A7C3 /* TQLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQLocationConverter.h; sourceTree = "<group>"; };
+		242ACC6C1F0ABC0900A1A7C3 /* TQLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQLocationConverter.m; sourceTree = "<group>"; };
 		246BEA681ED4232600AE0402 /* Piercing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Piercing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BEA741ED423F300AE0402 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		246BEA751ED423F300AE0402 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -73,8 +77,10 @@
 			isa = PBXGroup;
 			children = (
 				246BEA741ED423F300AE0402 /* Main.m */,
-				242ACC661F0A692500A1A7C3 /* FakeLocation.m */,
 				246BEA751ED423F300AE0402 /* Prefix.pch */,
+				242ACC661F0A692500A1A7C3 /* FakeLocation.m */,
+				242ACC6B1F0ABC0900A1A7C3 /* TQLocationConverter.h */,
+				242ACC6C1F0ABC0900A1A7C3 /* TQLocationConverter.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -106,6 +112,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242ACC6D1F0ABC0900A1A7C3 /* TQLocationConverter.h in Headers */,
 				246BEA821ED4267C00AE0402 /* Macro.h in Headers */,
 				246BEA831ED4267C00AE0402 /* NSUtil.h in Headers */,
 				246BEA771ED423F300AE0402 /* Prefix.pch in Headers */,
@@ -184,6 +191,7 @@
 			files = (
 				246BEA811ED4267C00AE0402 /* HookUtil.c in Sources */,
 				242ACC671F0A692500A1A7C3 /* FakeLocation.m in Sources */,
+				242ACC6E1F0ABC0900A1A7C3 /* TQLocationConverter.m in Sources */,
 				246BEA761ED423F300AE0402 /* Main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
