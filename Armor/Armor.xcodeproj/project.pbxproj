@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242ACC101F0A64C700A1A7C3 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 242ACC0F1F0A64C700A1A7C3 /* Location.gpx */; };
 		246BEA881ED4276500AE0402 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA851ED4276500AE0402 /* Main.m */; };
 		246BEA911ED4299700AE0402 /* Piercing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 246BEA901ED4299700AE0402 /* Piercing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		242ACC0F1F0A64C700A1A7C3 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		246BEA441ED4228900AE0402 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BEA851ED4276500AE0402 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		246BEA871ED4276500AE0402 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		246BEA861ED4276500AE0402 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				242ACC0F1F0A64C700A1A7C3 /* Location.gpx */,
 				246BEA871ED4276500AE0402 /* Info.plist */,
 			);
 			path = Resources;
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242ACC101F0A64C700A1A7C3 /* Location.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

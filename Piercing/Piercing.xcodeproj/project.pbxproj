@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242ACC671F0A692500A1A7C3 /* FakeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 242ACC661F0A692500A1A7C3 /* FakeLocation.m */; };
+		242ACC6A1F0A6CAA00A1A7C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242ACC691F0A6CAA00A1A7C3 /* CoreLocation.framework */; };
 		246BEA761ED423F300AE0402 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246BEA741ED423F300AE0402 /* Main.m */; };
 		246BEA771ED423F300AE0402 /* Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA751ED423F300AE0402 /* Prefix.pch */; };
 		246BEA801ED4267C00AE0402 /* HookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BEA7C1ED4267C00AE0402 /* HookUtil.h */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		242ACC661F0A692500A1A7C3 /* FakeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeLocation.m; sourceTree = "<group>"; };
+		242ACC691F0A6CAA00A1A7C3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		246BEA681ED4232600AE0402 /* Piercing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Piercing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246BEA741ED423F300AE0402 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		246BEA751ED423F300AE0402 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -31,12 +35,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242ACC6A1F0A6CAA00A1A7C3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		242ACC681F0A6CAA00A1A7C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				242ACC691F0A6CAA00A1A7C3 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		246BEA5E1ED4232600AE0402 = {
 			isa = PBXGroup;
 			children = (
@@ -44,6 +57,7 @@
 				246BEA731ED423F300AE0402 /* Sources */,
 				246BEA781ED4260300AE0402 /* Resources */,
 				246BEA691ED4232600AE0402 /* Products */,
+				242ACC681F0A6CAA00A1A7C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				246BEA741ED423F300AE0402 /* Main.m */,
+				242ACC661F0A692500A1A7C3 /* FakeLocation.m */,
 				246BEA751ED423F300AE0402 /* Prefix.pch */,
 			);
 			path = Sources;
@@ -168,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				246BEA811ED4267C00AE0402 /* HookUtil.c in Sources */,
+				242ACC671F0A692500A1A7C3 /* FakeLocation.m in Sources */,
 				246BEA761ED423F300AE0402 /* Main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
