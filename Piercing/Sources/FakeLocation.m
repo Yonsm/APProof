@@ -4,14 +4,16 @@
 #import <objc/runtime.h>
 #import <CoreLocation/CoreLocation.h>
 
-
+//
+bool _fake;
+CLLocationCoordinate2D _coordinate;
 NS_INLINE CLLocation *FakeLocation(CLLocation *location)
 {
-	return [[CLLocation alloc] initWithCoordinate:(CLLocationCoordinate2D){27.840109, 121.157791}
-										 altitude:location.altitude
-							   horizontalAccuracy:location.horizontalAccuracy
-								 verticalAccuracy:location.verticalAccuracy
-										timestamp:location.timestamp];
+	return _fake ? [[CLLocation alloc] initWithCoordinate:_coordinate
+												 altitude:location.altitude
+									   horizontalAccuracy:location.horizontalAccuracy
+										 verticalAccuracy:location.verticalAccuracy
+												timestamp:location.timestamp] : location;
 }
 
 //
@@ -72,3 +74,115 @@ HOOK_MESSAGE(void, CLLocationManager, setDelegate_, id<CLLocationManagerDelegate
 }
 
 #endif
+
+//
+@protocol QMapView <CLLocationManagerDelegate>
+- (CLLocationManager *)locationManager;
+@end
+
+@protocol POIInfo <NSObject>
+- (CLLocationCoordinate2D)coordinate;
+@end
+
+@protocol MMPickLocationViewController <NSObject>
+- (id<POIInfo>)getCurrentPOIInfo;
+- (UIView *)view;
+@end
+
+//
+@interface FakeLocationButton : UIButton
+- (instancetype)initWithController:(id<MMPickLocationViewController>)controller;
+@property(nonatomic,assign) id<MMPickLocationViewController> controller;
+@end
+
+
+//
+_HOOK_MESSAGE(void, MMPickLocationViewController, viewDidAppear_, BOOL animation)
+{
+	_MMPickLocationViewController_viewDidAppear_(self, sel, animation);
+	
+	UIButton *button = [[FakeLocationButton alloc] initWithController:self];
+	[[self view] addSubview:button];
+}
+
+
+//
+@implementation FakeLocationButton
+
+//
++ (void)load
+{
+	NSUserDefaults *defaults = NSUserDefaults.standardUserDefaults;
+	NSNumber *latitude = [defaults objectForKey:@"ArmorLatitude"];
+	NSNumber *longitude = [defaults objectForKey:@"ArmorLongitude"];
+	if (latitude && longitude)
+	{
+		_fake = true;
+		_coordinate.latitude = latitude.doubleValue;
+		_coordinate.longitude = longitude.doubleValue;
+	}
+	_Init_MMPickLocationViewController_viewDidAppear_();
+}
+
+//
+- (instancetype)initWithController:(id<MMPickLocationViewController>)controller
+{
+	self = [super initWithFrame:CGRectMake(12, 120, 90, 30)];
+	_controller = controller;
+	
+	[self updateTitle];
+	[self addTarget:self action:@selector(toggle) forControlEvents:UIControlEventTouchUpInside];
+	
+	self.titleLabel.font = [UIFont systemFontOfSize:12];
+	self.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.7];
+	self.clipsToBounds = YES;
+	self.layer.cornerRadius = 4;
+	
+	return self;
+}
+
+//
+- (void)toggle
+{
+	NSUserDefaults *defaults = NSUserDefaults.standardUserDefaults;
+	
+	if (_fake)
+	{
+		_fake = false;
+		[defaults removeObjectForKey:@"ArmorLatitude"];
+		[defaults removeObjectForKey:@"ArmorLongitude"];
+	}
+	else
+	{
+		id<POIInfo> info = _controller.getCurrentPOIInfo;
+		if (info == nil)
+		{
+			[[[UIAlertView alloc] initWithTitle:@"错误" message:@"未能获取当前坐标" delegate:nil cancelButtonTitle:@"好吧" otherButtonTitles:nil] show];
+			return;
+		}
+		_fake = true;
+		_coordinate = info.coordinate;
+		[defaults setObject:[NSNumber numberWithDouble:_coordinate.latitude] forKey:@"ArmorLatitude"];
+		[defaults setObject:[NSNumber numberWithDouble:_coordinate.longitude] forKey:@"ArmorLongitude"];
+	}
+	
+	[self updateTitle];
+	for (id<QMapView> view in _controller.view.subviews)
+	{
+		if ([NSStringFromClass(view.class) isEqualToString:@"QMapView"])
+		{
+			[view.locationManager stopUpdatingLocation];
+			[view.locationManager startUpdatingLocation];
+			//[view locationManager: didUpdateToLocation:fromLocation:]
+			break;
+		}
+	}
+}
+
+//
+- (void)updateTitle
+{
+	[self setTitle:_fake ? @"恢复真实位置" : @"设为模拟位置" forState:UIControlStateNormal];
+}
+
+@end
