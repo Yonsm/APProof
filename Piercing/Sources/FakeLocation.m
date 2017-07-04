@@ -37,7 +37,7 @@ HOOK_MESSAGE(void, QMapView, locationManager_didUpdateToLocation_fromLocation_, 
 
 void $CLLocationManagerDelegate_locationManager_didUpdateLocations_(NSObject *self, SEL sel, CLLocationManager *manager, NSArray<CLLocation *> *locations)
 {
-	void (*old)(id self, SEL sel, CLLocationManager *manager, NSArray<CLLocation *> *locations) = [objc_getAssociatedObject(self.class, @"_locationManager_didUpdateToLocation_fromLocation_") pointerValue];
+	void (*old)(id self, SEL sel, CLLocationManager *manager, NSArray<CLLocation *> *locations) = [objc_getAssociatedObject(self.class, @"_locationManager_didUpdateLocations_") pointerValue];
 	
 	old(self, sel, manager, locations.count ? @[FakeLocation(locations[0])] : nil);
 }
@@ -52,13 +52,13 @@ void $CLLocationManagerDelegate_locationManager_didUpdateToLocation_fromLocation
 //
 HOOK_MESSAGE(void, CLLocationManager, setDelegate_, id<CLLocationManagerDelegate> delegate)
 {
-	if (!objc_getAssociatedObject(delegate.class, @"_locationManager_didUpdateToLocation_fromLocation_"))
+	if (!objc_getAssociatedObject(delegate.class, @"_locationManager_didUpdateLocations_"))
 	{
-		Method method = class_getInstanceMethod(delegate.class, @selector(locationManager:didUpdateToLocation:fromLocation:));
+		Method method = class_getInstanceMethod(delegate.class, @selector(locationManager:didUpdateLocations:));
 		if (method)
 		{
-			IMP old = method_setImplementation(method, (IMP)$CLLocationManagerDelegate_locationManager_didUpdateToLocation_fromLocation_);
-			objc_setAssociatedObject(delegate.class, @"_locationManager_didUpdateToLocation_fromLocation_", [NSValue valueWithPointer:old], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+			IMP old = method_setImplementation(method, (IMP)$CLLocationManagerDelegate_locationManager_didUpdateLocations_);
+			objc_setAssociatedObject(delegate.class, @"_locationManager_didUpdateLocations_", [NSValue valueWithPointer:old], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 		}
 	}
 	if (!objc_getAssociatedObject(delegate.class, @"_locationManager_didUpdateToLocation_fromLocation_"))
