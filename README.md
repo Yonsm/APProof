@@ -4,7 +4,7 @@ Armor Piercing Proof
 An iOS application template, to inject dynamic hook for an third-party AppStore's App, without device jailbroken.
 
 1. Download this project;
-2. Got AppStore's App, decrypt it with Clutch or dumpdecrypted;
+2. Got AppStore's App, decrypt it with [Clutch](https://github.com/KJCracks/Clutch) or [dumpdecrypted](https://github.com/CarinaTT/dumpdecrypted);
 3. Put decrypted app into Proof/*.app;
 4. (Optional) Maybe you sould remove some extensions or *.app/Frameworks (to avoid code sign related problem);
 5. Modify hook code in Piercing/Source;
